@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+}
+
+body .container #amiibo_cont .row .col_height img {
+  width: 100%;
+  border-radius: 50%;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+body .container #amiibo_cont .row .col_height img:hover {
+  opacity: 0.5;
+}
+
+body footer {
+  width: 100%;
+  background-color: #CF171F;
+  padding: 10px 0px 10px 2px;
+}
+
+body footer img {
+  height: 40px;
+}
+/*# sourceMappingURL=amiibo.css.map */

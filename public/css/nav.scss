@@ -1,0 +1,270 @@
+@mixin w350 {
+    @media(max-width:350px){
+        @content;
+    }
+}
+@mixin w500 {
+    @media(max-width:500px){
+        @content;
+    }
+}
+@mixin w1000 {
+    @media(max-width:1000px){
+        @content;
+    }
+}
+@mixin w780 {
+    @media(max-width:780px){
+        @content;
+    }
+}
+@mixin w760 {
+    @media(max-width:760px){
+        @content;
+    }
+}
+@mixin w1458 {
+    @media(max-width:1458px){
+        @content;
+    }
+}
+@mixin w1180 {
+    @media(max-width:1180px){
+        @content;
+    }
+}
+html{
+    scroll-behavior:smooth;
+}
+body{
+    margin: 0;
+    #go_to_top{
+        position: fixed;
+        bottom: 65px;
+        right: 1%;
+        width: 3%;
+        z-index: 3;
+        cursor: pointer;
+        img{
+            width: 100%;
+        }
+    }
+    #nav{
+        width: 100%;
+        z-index: 10;
+        position: absolute;
+        top: 30px;
+        left: 0;
+        height: 80px;
+        @include w1000{
+            height: 60px;
+        }
+        @include w760{
+            height: 40px;
+        }
+        .container{
+            position: relative;
+            width: 100%;
+            height: 100%;
+            img{
+                position: absolute;
+            height: 80%;
+            right: 0;
+            cursor: pointer;
+        }
+        a img{
+            position: absolute;
+            left: 0;
+            height: 60px;
+        }
+        }
+
+    }
+    footer{
+        width: 100%;
+        height: 60px;
+        background-color: #ec1b2e;
+        box-shadow: 5px -3px 6px black;
+        .container{
+            position: relative;
+            height: 100%;
+            img{
+                position: absolute;
+                top: 50%;
+                transform: translate(0,-50%);
+                left: 0;
+                height: 50px;
+                @include w780{
+                    height: 30px;
+                }
+            }
+            span{
+                position: absolute;
+                top: 50%;
+                transform: translate(-50%,-50%);
+                color: white;
+                left: 50%;
+                @include w780{
+                    right: 0;
+                    transform: translate(0,-50%);
+                }
+            }
+        }
+    }
+    #nav_{
+        position: fixed;
+        pointer-events: none;
+        opacity: 0;
+        transition: 0.8s;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.6);
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        z-index: 11;
+        #nav_cont{
+            width: 60%;
+            height: 100%;
+            #home{
+                width: 100%;
+                height: 60px;
+                padding-top:20px ;
+                padding-left: 50px;
+                img{
+                    height: 100%;
+                    cursor: pointer;
+                }
+            }
+                .row{
+                    width: 80%;
+                    display: block;
+                    height: calc(100vh - 100px);
+                    margin-top: 30px;
+                    padding-left: 50px;
+                }
+                a{
+                    width: 100%;
+                    text-decoration:none;
+                }
+                .col-12{
+
+                    background-color: rgba($color: white, $alpha: 0.8);
+                    border-radius: 15px;
+                    margin-top: 15px;
+                    cursor: pointer;
+                    &:hover{
+                        background-color: rgba($color: #424141, $alpha: 0.5);
+                    }
+                    &:hover span{
+                        color: skyblue;
+                    }
+                    span{
+                        font-size: 60px;
+                        text-align: center;
+                        color: black;
+                        @include w1458{
+                            font-size: 48px;
+                        }
+                        @include w1180{
+                            font-size: 36px;
+                        }
+                        @include w1000{
+                            font-size: 28px;
+                        }
+                        @include w760{
+                            font-size: 18px;
+                        }
+                        @include w500{
+                            font-size: 14px;
+                        }
+                        @include w350{
+                            font-size: 12px;
+                        }
+                    }
+                }
+            .ino{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                display: none;
+            }
+            .ino.active{
+                display: block;
+            }
+        }
+        #nav_btn_group{
+            width: 40%;
+            height: 100%;
+            background-image: url("../img/nav/mask.png");
+            background-size: cover;
+            background-position: left;
+            position: relative;
+            #btn_exit{
+                position: absolute;
+                top: 15px;
+                right: 15px;
+                width: 15px;
+                height: 15px;
+                cursor: pointer;
+                background-image: url("../img/nav/x_btn.png");
+                background-size: cover;
+                z-index: 9;
+            }
+            #tis_img{
+                width: 100px;
+                height: 50%;
+                position: absolute;
+                top: 50%;
+                left: 80px;
+                transform: translate(0,-50%);
+                background-image: url("../img/nav/drag.png");
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+                @include w1000{
+                    width: 80px;
+                }
+                @include w760{
+                    left: 40px;
+                }
+                @include w500{
+                    left: 0;
+                    width: 60px;
+                }
+            }
+            #host_amiibo{
+                .swiper-container{
+                    width: 60%;
+                    margin: 0;
+                    float:right;
+                    height: 100vh;
+                    .swiper-slide{
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-direction: column;
+                        transition: 0.3s;
+                        p{
+                            font-weight: 900;
+                            font-size: 20px;
+                            margin: 0;
+                            @include w500{
+                                font-size: 14px;
+                            }
+                        }
+                        img{
+                            width: 40%;
+                        }
+                    }
+                    .swiper-slide-active img{
+                        width: 80%;
+                    }
+                }
+            }
+        }
+
+
+    }
+}

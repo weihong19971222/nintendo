@@ -1,0 +1,105 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+body #service {
+  width: 70%;
+  padding-top: 150px;
+  margin: auto;
+}
+
+body #service #service_pic {
+  width: 100%;
+  height: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body #service #service_pic #service_pic_text {
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  font-weight: 900;
+  margin-left: 15px;
+}
+
+body #service #service_pic #service_pic_text p {
+  margin: 0;
+}
+
+body #service #service_pic #service_pic_text #circle {
+  width: 20px;
+  height: 20px;
+  background-color: darkred;
+  border-radius: 50%;
+}
+
+body #service #service_text {
+  margin: 100px 0;
+  width: 100%;
+  height: 70%;
+  padding-left: 20px;
+}
+
+body #service #service_text p {
+  margin: 0;
+}
+
+body #service #service_text #service_text1 {
+  width: 100%;
+  height: 10%;
+}
+
+body #service #service_text #service_text2 {
+  width: 100%;
+  height: 20%;
+  padding-top: 60px;
+  border-bottom: 5px solid darkred;
+}
+
+body #service #service_text #service_text2 h2 {
+  margin: 0;
+}
+
+body #service #service_text #service_text3 {
+  width: 100%;
+  background-color: rgba(184, 207, 241, 0.397);
+  font-weight: 600;
+  position: relative;
+}
+
+body #service #service_text #service_text3 ul li {
+  margin-top: 10px;
+}
+
+body #service #service_text #service_text3 p {
+  position: absolute;
+  bottom: 30px;
+  left: 20px;
+  text-align: center;
+  color: darkred;
+  pointer-events: none;
+}
+
+body #service #service_text #service_text3 img {
+  cursor: pointer;
+}
+
+@media (max-width: 420px) {
+  #service_text2 {
+    height: 25% !important;
+  }
+}
+/*# sourceMappingURL=service_screen.css.map */

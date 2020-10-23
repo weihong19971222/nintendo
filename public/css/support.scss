@@ -1,0 +1,200 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    #title{
+        width: 500px;
+        height: 100px;
+        margin: auto;
+        padding-top: 10px;
+        margin-top: 20px;
+        border-bottom: 5px solid darkred;
+        p{
+            font-size: 48px;
+            font-weight: 900;
+            text-align: center;
+            margin: 0;
+            
+        }
+    }
+    #search{
+        width: 100%;
+        height: 700px;
+        display: flex;
+        #search_cloud1{
+            width: 25%;
+            height: 100%;
+            position: relative;
+            #c2{
+                position: absolute;
+                bottom: 20%;
+                left: 40%;
+                z-index: 2;
+                animation-name:cloudfloat;
+                animation-duration: 5s;
+                animation-fill-mode: forwards;
+                animation-iteration-count: infinite;
+            }
+            #c1{
+                animation-name:cloudfloat2;
+                animation-duration: 5s;
+                animation-fill-mode: forwards;
+                animation-iteration-count: infinite;
+            }
+            @keyframes cloudfloat {
+                0%{transform: translateY(0px);}
+                50%{transform: translateY(50px);}
+                100%{transform: translateY(0px);}
+
+            }
+            @keyframes cloudfloat2 {
+                0%{transform: translateY(0px);}
+                50%{transform: translateY(-50px);}
+                100%{transform: translateY(0px);}
+
+            }
+        }
+        @keyframes thinkfloat2 {
+            0%{transform: translateY(0px);}
+            50%{transform: translateY(-50px);}
+            100%{transform: translateY(0px);}
+
+        }
+        #search_center{
+            width: 50%;
+            height: 100%;
+            position: relative;
+            #t1{
+                cursor: pointer;
+            }
+            img:nth-child(8){
+                position: absolute;
+                top: 70%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                
+            }
+
+            img:nth-child(6){
+                position: absolute;
+                top: 40%;
+                left: 60%;
+                transform: translate(-50%,-50%);
+                animation-name:thinkfloat2;
+                animation-duration: 5s;
+                animation-fill-mode: forwards;
+                animation-iteration-count: infinite;
+            }
+    
+
+       
+            img:nth-child(4){
+                position: absolute;
+                top: 30%;
+                left: 70%;
+                transform: translate(-50%,-50%);
+                animation-name:thinkfloat2;
+                animation-duration: 5s;
+                animation-fill-mode: forwards;
+                animation-iteration-count: infinite;
+     
+
+            }
+            img:nth-child(2){
+                position: absolute;
+                top: 20%;
+                left: 80%;
+                transform: translate(-50%,-50%);
+                animation-name:thinkfloat2;
+                animation-duration: 5s;
+                animation-fill-mode: forwards;
+                animation-iteration-count: infinite;
+ 
+            }
+        }
+        #search_cloud2{
+            width: 25%;
+            height: 100%;
+            position: relative;
+            #c3{
+                position: absolute;
+                bottom: 20%;
+                left: -50%;
+                z-index: 2;
+                animation-name:cloudfloat2;
+                animation-duration: 5s;
+                animation-fill-mode: forwards;
+                animation-iteration-count: infinite;
+            }
+            #c4{
+                animation-name:cloudfloat;
+                animation-duration: 5s;
+                animation-fill-mode: forwards;
+                animation-iteration-count: infinite;
+            }
+        }
+    }
+    #bricks{
+        width: 70%;
+        height: 50px;
+        background-image: url('../img/support_screen/bb.png');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin: auto;
+    }
+    #sup{
+        width: 70%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        .sup_box{
+            width: 250px;
+            height: 250px;
+            font-size: 24px;
+            font-weight: 900;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #427e96;
+            img{
+                cursor: pointer;
+            }
+
+        }
+    }
+}
+@media(max-width:755px){
+    #c1{
+        margin-top: 150px !important;
+    }
+    #c4{
+        margin-top: 150px !important;
+    }
+    #c2{
+        bottom: 32% !important;
+    }
+  
+    #t1{
+        transform: scale(2) !important;
+        margin-top: 50px !important;
+    }
+    #title{
+        width: 400px !important;
+        p{
+            font-size: 32px !important;
+        }
+    }
+}
+@media(max-width:350px){
+  
+    #title{
+        width: 300px !important;
+        p{
+            font-size: 29px !important;
+        }
+    }
+}

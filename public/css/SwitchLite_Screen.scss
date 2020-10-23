@@ -1,0 +1,510 @@
+body{
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+#switch_grey{
+    width: 100%;
+    height: 100vh;
+    background-color: #E2E2E2;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    p{
+        font-size: 48px;
+        font-family: 'Oswald', sans-serif;
+    }
+}
+#switch_pink{
+    width: 100%;
+    height: 100vh;
+    background-color: #FDC8D2;
+    position: relative;
+    overflow: hidden;
+    #pink{
+        width: 70%;
+        height: 100%;
+        float: left;
+        transform: translateX(-40%) rotate(-40deg) translateY(10%);
+
+
+    }
+    p{
+        color: #C64A50;
+        font-size: 28px;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        span{
+            font-size: 14px;
+        }
+    }
+}
+
+#switch_yellow{
+    width: 100%;
+    height: 100vh;
+    background-color: #FEF0A7;
+    position: relative;
+    overflow: hidden;
+    #yellow{
+        width: 70%;
+        height: 100%;
+        float: right;
+        transform: translateX(40%) rotate(40deg) translateY(10%);
+
+
+    }
+
+        p{
+            width: 50%;
+            color: #C39E40;
+            font-size: 28px;
+            position: absolute;
+            float: left;
+            top: 30%;
+            left: 3%;
+            span
+            {
+                font-size: 14px;
+            }
+        }
+
+
+}
+
+#switch_blue{
+    width: 100%;
+    height: 100vh;
+    background-color: #9CF9FF;
+    position: relative;
+    overflow: hidden;
+    #blue{
+        width: 70%;
+        height: 100%;
+        float: left;
+        transform: translateX(-40%) rotate(-40deg) translateY(10%);
+
+
+    }
+    p{
+        color: #007E84;
+        font-size: 28px;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        span{
+            font-size: 14px;
+        }
+    }
+}
+#switchlite_white{
+    width: 100%;
+    height: 100vh;
+    #wt{
+        width: 100%;
+        height: 20%;
+    }
+    #wb{
+        width: 100%;
+        height: 80%;
+        font-size: 48px;
+        text-align: center;
+        #description_titile{
+            width: 100%;
+            height: 10%;
+            font-family: 'Noto Sans TC', sans-serif;
+
+        }
+        #description_content{
+            width: 100%;
+            height: 70%;
+            #description_content_pic{
+                width: 65%;
+                height: 100%;
+                margin-left: 18%;
+                background-image: url('../img/SwitchLite_Screen/description1.jpg');
+                background-position: center;
+                background-size: contain;
+                background-repeat: no-repeat;
+                transition: 0.5s;
+
+            }
+            #description_content_pic.description_content_pic1{
+                background-image: url('../img/SwitchLite_Screen/description1.jpg');
+            }
+            #description_content_pic.description_content_pic2{
+                background-image: url('../img/SwitchLite_Screen/description2.jpg');
+            }
+            #description_content_pic.description_content_pic3{
+                background-image: url('../img/SwitchLite_Screen/description3.jpg');
+            }
+            #description_content_pic.description_content_pic4{
+                background-image: url('../img/SwitchLite_Screen/description4.jpg');
+            }
+        }
+        #description_botton_group{
+            width: 100%;
+            height: 20%;
+            display: flex;
+            justify-content: center;
+            .description_botton{
+                width: 10%;
+                height: 100%;
+                background-image: url('../img/SwitchLite_Screen/box.png');
+                background-position: center;
+                background-size: contain;
+                background-repeat: no-repeat;
+                margin-left: 30px;
+                cursor: pointer;
+                position: relative;
+                &:hover{
+                    .star{
+                    top: -50%;
+                    opacity: 1;
+
+                    }
+                }
+                .star{
+                    width: 50%;
+                    height: 50%;
+                    background-image: url('../img/SwitchLite_Screen/star.png');
+                    background-position: center;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    position: absolute;
+                    left: 25%;
+                    transition: 0.5s;
+                   top: 0%;
+                   opacity: 0;
+                }
+            }
+        }
+
+    }
+}
+#switchlite_info{
+    margin-top: 200px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    #switchlite_info_pic{
+        width: 60%;
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+        img{
+            position: absolute;
+            top: 25%;
+            left: 25%;
+        }
+    }
+    #switchlite_info_text{
+        width: 40%;
+        height: 100%;
+        padding-left: 20px;
+        #switchlite_info_text_menu{
+            width: 100%;
+            height: 10%;
+            font-family: 'Noto Sans TC', sans-serif;
+            font-size: 36px;
+            text-align: center;
+            margin-top: 20px;
+        }
+        #switchlite_info_text_news{
+            width: 100%;
+            height: 30%;
+            display: flex;
+            #switchlite_info_text_news_pic{
+                width: 20%;
+                height: 100%;
+                background-image: url('/img/SwitchLite_Screen/news.png');
+                background-position: center;
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+            #switchlite_info_text_news_text{
+                width: 80%;
+                height: 100%;
+                padding-top: 50px;
+                padding-left: 50px;
+                h2{
+                    color: #fe3c32;
+
+                }
+            }
+
+        }
+        #switchlite_info_text_shop{
+            width: 100%;
+            height: 30%;
+            display: flex;
+            #switchlite_info_text_shop_pic{
+                width: 20%;
+                height: 100%;
+                background-image: url('/img/SwitchLite_Screen/shop.png');
+                background-position: center;
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+            #switchlite_info_text_shop_text{
+                width: 80%;
+                height: 100%;
+                padding-top: 50px;
+                padding-left: 50px;
+                h2{
+                    color: #ff9f00;
+
+                }
+            }
+
+        }
+        #switchlite_info_text_photo{
+            width: 100%;
+            height: 30%;
+            display: flex;
+            #switchlite_info_text_photo_pic{
+                width: 20%;
+                height: 100%;
+                background-image: url('/img/SwitchLite_Screen/photo.png');
+                background-position: center;
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+            #switchlite_info_text_photo_text{
+                width: 80%;
+                height: 100%;
+                padding-top: 50px;
+                padding-left: 50px;
+                h2{
+                    color: #1372ff;
+
+                }
+            }
+
+        }
+    }
+}
+#switchlite_buy{
+    width: 100%;
+    height: 100vh;
+    #buy_titile{
+        width: 100%;
+        height: 20%;
+        font-family: 'Noto Sans TC', sans-serif;
+        font-size: 48px;
+        text-align: center;
+        padding-top: 20px;
+    }
+    #buy_pic_group{
+        width: 100%;
+        height: 70%;
+        margin: auto;
+        margin-bottom: 100px;
+        display: flex;
+        .buy_pic{
+            width: 25%;
+            height: 100%;
+            background-color: cornflowerblue;
+
+        }
+    }
+}
+
+
+
+
+@media(max-width:1280px){
+
+    #description_content_pic{
+        width: 80% !important;
+        margin-left: 10% !important;
+    }
+    #pink{
+        transform: translateX(-30%) rotate(-40deg) translateY(20%) !important;
+    }
+    #blue{
+        transform: translateX(-30%) rotate(-40deg) translateY(20%) !important;
+    }
+    #yellow{
+        transform: translateX(40%) rotate(40deg) translateY(15%) !important;
+    }
+}
+@media(max-width:917px){
+
+    #description_content_pic{
+        width: 100% !important;
+        margin-left: 0% !important;
+    }
+
+        #buy_pic_group{
+        width: 90% !important;
+    }
+    #pink{
+        transform: translateX(-35%) rotate(-40deg) translateY(30%) !important;
+    }
+    #blue{
+        transform: translateX(-35%) rotate(-40deg) translateY(30%) !important;
+    }
+
+    #switch_yellow{
+        #yellow{
+            transform: translateX(40%) rotate(40deg) translateY(25%) !important;
+        }
+
+
+    }
+
+}
+@media(max-width:776px){
+
+    #description_content_pic{
+        background-size: cover !important;
+        background-position: left !important;
+        &:hover{
+            background-position: right !important;
+
+        }
+    }
+    #switchlite_info{
+        flex-direction: column !important;
+        #switchlite_info_text_menu{
+            margin-bottom: 20px;
+        }
+        #switchlite_info_pic{
+            width: 100% !important;
+            height: 60% !important;
+        }
+        #switchlite_info_text{
+            width: 100% !important;
+            height: 40% !important;
+        }
+        #switchlite_info_text_news{
+            #switchlite_info_text_news_text{
+                padding: 0 !important;
+                p{
+                    margin: 0 !important;
+                }
+                h2{
+                    margin-top: 0;
+                }
+
+            }
+        }
+        #switchlite_info_text_shop{
+            margin: 30px 0 !important;
+            #switchlite_info_text_shop_text{
+                padding: 0 !important;
+                p{
+                    margin: 0 !important;
+                }
+                h2{
+                    margin-top: 0;
+                }
+            }
+        }
+        #switchlite_info_text_photo{
+            #switchlite_info_text_photo_text{
+                padding: 0 !important;
+                p{
+                    margin: 0 !important;
+                }
+                h2{
+                    margin-top: 0;
+                }
+
+            }
+        }
+    }
+
+    #buy_pic_group{
+        flex-direction: column;
+        .buy_pic{
+            width: 100% !important;
+            height: 25% !important;
+        }
+        .buy_pic:first-child{
+            content: url('../img/SwitchLite_Screen/switch-lite-grey4.png');
+        }
+        .buy_pic:nth-child(2){
+            content: url('../img/SwitchLite_Screen/switch-lite-yellow_4.png');
+        }
+        .buy_pic:nth-child(3){
+            content: url('../img/SwitchLite_Screen/switch-lite-pink4.png');
+        }
+        .buy_pic:nth-child(4){
+            content: url('../img/SwitchLite_Screen/switch-lite-blue4.png');
+        }
+    }
+    #switch_pink{
+        #pink{
+            width: 100%;
+            transform: translateX(-40%) rotate(-40deg) translateY(15%) !important;
+
+        }
+        p{
+            top: 20%;
+        }
+    }
+    #switch_blue{
+        #blue{
+            width: 100%;
+            transform: translateX(-40%) rotate(-40deg) translateY(15%) !important;
+
+        }
+        p{
+            top: 20%;
+        }
+    }
+    #switch_yellow{
+        #yellow{
+            width: 100%;
+            transform: translateX(55%) rotate(40deg) translateY(25%) !important;
+
+        }
+        p{
+            top: 15%;
+        }
+    }
+}
+@media(max-width:500px){
+    #switch_pink{
+        #pink{
+            width: 100%;
+            transform:  translateY(40%) !important;
+            opacity: 0.2;
+
+        }
+        p{
+            top: 20%;
+            left: 10%;
+        }
+    }
+    #switch_blue{
+        #blue{
+            width: 100%;
+            transform:  translateY(40%) !important;
+            opacity: 0.2;
+
+        }
+        p{
+            top: 20%;
+            left: 10%;
+        }
+    }
+
+
+    #switch_yellow{
+        #yellow{
+            width: 100%;
+            transform:  translateY(30%) !important;
+            opacity: 0.2;
+
+        }
+        p{
+            top: 5%;
+            left: 30%;
+        }
+    }
+}

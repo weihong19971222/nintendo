@@ -1,0 +1,399 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    height: 600vh;
+    overflow-x: hidden;
+    background-image: url();
+    #fog{
+        z-index: 9;
+        width: 100%;
+        height: 100vh;
+        background-image: url('../img/switch_screen/giphy.gif');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: fixed;
+        filter: grayscale(100%);
+        pointer-events: none;
+    }
+    #fog_bg{
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        display: flex;
+        flex-wrap: wrap;
+        z-index: -5;
+        .bg{
+            width: 20%;
+            height: 50%;
+            background-image: url('../img/switch_screen/ma.png');
+            background-position: center;
+            background-size: contain;
+            opacity: 0;
+            background-repeat: no-repeat;
+
+
+
+        }
+        .bg:nth-child(8){
+            opacity: 1;
+        }
+
+    }
+    #switch_top{
+        width: 100%;
+        height: 100vh;
+    }
+    #switch{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        z-index: 0;
+        #test{
+            height: 100%;
+            width: 80%;
+            background-image: url("../img/switch_screen/switch.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            #Switch_Viedo{
+                width:58%;
+            }
+        }
+        p{
+            margin: 0;
+            font-size: 48px;
+            font-family: 'Oswald', sans-serif;
+            color: #E60212;
+        }
+    }
+    #switch_text{
+        width: 100%;
+        height: 100vh;
+        p{
+            font-size: 36px;
+            text-align: center;
+            color: rgb(0, 0, 0);
+            text-shadow: 0 0 0.1em rgb(17, 17, 17);
+        }
+    }
+    #switch_text2{
+        width: 100%;
+        height: 100vh;
+        p{
+            font-size: 36px;
+            padding-left: 60%;
+            color: rgb(0, 0, 0);
+            text-shadow: 0 0 0.1em rgb(17, 17, 17);        }
+    }
+    #switch_text3{
+        width: 100%;
+        height: 100vh;
+        p{
+            margin:0;
+            font-size: 36px;
+            padding-left: 60%;
+            color: rgb(0, 0, 0);
+            text-shadow: 0 0 0.1em rgb(17, 17, 17);
+        }
+        span{
+            margin:0;
+            font-size: 36px;
+            color: rgb(0, 0, 0);
+            text-shadow: 0 0 0.1em rgb(17, 17, 17);
+            float: left;
+        }
+    }
+    #switch_text4{
+        width: 100%;
+        height: 10vh;
+        background-color:#e70012;
+        .row{
+            height: 100%;
+        .col-4:nth-child(2)
+            {
+                background-image: url('../img/switch_screen/player.jpg');
+                background-position: center;
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+        }
+
+    }
+    #online{
+        width: 100%;
+        .row{
+            height: 50%;
+        }
+
+
+    }
+    #online_card{
+        .row{
+            .col-12{
+                overflow: hidden;
+                &:hover{
+                    .game_mode_card{
+                        top: 0%;
+                    border-top-left-radius: 0px;
+                    border-top-right-radius: 0px;
+                    p{
+                        opacity: 1;
+                    }
+                    span{
+                        opacity: 1;
+                    }
+                    }
+
+                }
+                .game_mode_card{
+                    height: 100%;
+                    background-color: #ffffff;
+                    position: absolute;
+                    opacity: 0.7;
+                    top: 80%;
+                    left: 0%;
+                    border-top-left-radius: 60px;
+                    border-top-right-radius: 60px;
+                    transition: 1s;
+                    width: 100%;
+                    p{
+                        font-size: 20px;
+                        font-weight: 900;
+                        opacity: 0;
+                        transition: 1s;
+                    }
+                    span{
+                        font-weight: 900;
+                        opacity: 0;
+                        transition: 1s;
+                        font-size: 12px;
+
+                    }
+                    h2{
+                        font-weight: 900;
+
+                    }
+
+
+                }
+            }
+        }
+    }
+    #joy_con{
+        margin-top: 200px;
+        margin-bottom: 200px;
+    }
+    #joy_con_pic{
+        width: 100%;
+        font-size: 48px;
+        padding-top: 3%;
+        p{
+            text-align: center;
+            font-family: 'Noto Sans TC', sans-serif;
+
+        }
+        #joy_con_pic_group{
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            a{
+                img{
+                    border-radius: 100%;
+
+                }
+            }
+        }
+        #joy_con_pic_group2{
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+
+            a{
+                img{
+                    border-radius: 100%;
+
+                }
+            }
+        }
+    }
+    #switch_info{
+        margin-top: 200px;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        #switch_info_pic{
+            width: 60%;
+            height: 100%;
+            position: relative;
+            overflow: hidden;
+            img{
+                position: absolute;
+                top: 25%;
+                left: 12%;
+            }
+        }
+        #switch_info_text{
+            width: 40%;
+            height: 100%;
+            padding-left: 20px;
+            #switch_info_text_menu{
+                width: 100%;
+                height: 10%;
+                font-family: 'Noto Sans TC', sans-serif;
+                font-size: 36px;
+                text-align: center;
+                margin-top: 20px;
+            }
+            #switch_info_text_news{
+                width: 100%;
+                height: 30%;
+                display: flex;
+                #switch_info_text_news_pic{
+                    width: 20%;
+                    height: 100%;
+                    background-image: url('../img/switch_screen/news.png');
+                    background-position: center;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                }
+                #switch_info_text_news_text{
+                    width: 80%;
+                    height: 100%;
+                    padding-top: 50px;
+                    padding-left: 50px;
+                    h2{
+                        color: #fe3c32;
+
+                    }
+                }
+
+            }
+            #switch_info_text_shop{
+                width: 100%;
+                height: 30%;
+                display: flex;
+                #switch_info_text_shop_pic{
+                    width: 20%;
+                    height: 100%;
+                    background-image: url('../img/switch_screen/shop.png');
+                    background-position: center;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                }
+                #switch_info_text_shop_text{
+                    width: 80%;
+                    height: 100%;
+                    padding-top: 50px;
+                    padding-left: 50px;
+                    h2{
+                        color: #ff9f00;
+
+                    }
+                }
+
+            }
+            #switch_info_text_photo{
+                width: 100%;
+                height: 30%;
+                display: flex;
+                #switch_info_text_photo_pic{
+                    width: 20%;
+                    height: 100%;
+                    background-image: url('../img/switch_screen/photo.png');
+                    background-position: center;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                }
+                #switch_info_text_photo_text{
+                    width: 80%;
+                    height: 100%;
+                    padding-top: 50px;
+                    padding-left: 50px;
+                    h2{
+                        color: #1372ff;
+
+                    }
+                }
+
+            }
+        }
+    }
+}
+@media(max-width:767px){
+    .col-12.col-md-4{
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    #joy_con_info{
+        .row{
+            .col-12{
+                img{
+                    width: 150% !important;
+                    content: url("../img/switch_screen/Joy-con2.png")
+
+                }
+            }
+        }
+    }
+    #switch_info{
+        flex-direction: column !important;
+        #switch_info_text_menu{
+            margin-bottom: 20px;
+        }
+        #switch_info_pic{
+            width: 100% !important;
+            height: 60% !important;
+        }
+        #switch_info_text{
+            width: 100% !important;
+            height: 40% !important;
+        }
+        #switch_info_text_news{
+            #switch_info_text_news_text{
+                padding: 0 !important;
+                p{
+                    margin: 0 !important;
+                }
+                h2{
+                    margin-top: 0;
+                }
+
+            }
+        }
+        #switch_info_text_shop{
+            margin: 30px 0 !important;
+            #switch_info_text_shop_text{
+                padding: 0 !important;
+                p{
+                    margin: 0 !important;
+                }
+                h2{
+                    margin-top: 0;
+                }
+            }
+        }
+        #switch_info_text_photo{
+            #switch_info_text_photo_text{
+                padding: 0 !important;
+                p{
+                    margin: 0 !important;
+                }
+                h2{
+                    margin-top: 0;
+                }
+
+            }
+        }
+    }
+}
