@@ -49,7 +49,7 @@
                 </div>
                 <div id="news" data-type="5" class="ino">
                     <div class="row">
-                        <a href=""><div class="col-12"><span>購物商城</span></div></a>
+                        <a href="/store_main"><div class="col-12"><span>購物商城</span></div></a>
                     </div>
                 </div>
             </div>

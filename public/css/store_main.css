@@ -1,0 +1,230 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+body #title {
+  width: 100%;
+  height: 100px;
+}
+
+body #title #shop_logo {
+  width: 250px;
+  height: 60px;
+  background-color: red;
+  float: left;
+  font-size: 32px;
+  color: white;
+  padding-left: 30px;
+  padding-top: 10px;
+  border-radius: 0 0 15px 15px;
+  margin-left: 50px;
+}
+
+body #title #shop_logo p {
+  margin: 0;
+}
+
+body #title img {
+  margin-top: 5px;
+}
+
+body #shop_button_group {
+  width: 50%;
+  height: 50px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 24px;
+  font-weight: 900;
+}
+
+body #shop_button_group a {
+  text-decoration: none;
+  color: black;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+body #shop_button_group a:hover {
+  color: red;
+}
+
+body #shop_button_group p {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+  color: black;
+}
+
+body #shop_button_group p:hover {
+  color: red;
+}
+
+body #shop_button_group p.active {
+  color: red;
+}
+
+body .swiper-container.swiper_shop {
+  width: 100%;
+}
+
+body .swiper-container.swiper_shop .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+body .swiper-container.swiper_shop .swiper-slide.swiper-slide-next {
+  width: 40% !important;
+}
+
+body .swiper-container.swiper_shop .swiper-slide.swiper-slide-active {
+  width: 30% !important;
+}
+
+body .swiper-container.swiper_shop .swiper-slide.swiper-slide-prev {
+  width: 30% !important;
+}
+
+body .type {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .swiper-container.swiper_host {
+  width: 70%;
+}
+
+body .swiper-container.swiper_host .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+body .swiper-container.swiper_controller {
+  width: 70%;
+}
+
+body .swiper-container.swiper_controller .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+body .swiper-container.swiper_amiibo {
+  width: 70%;
+}
+
+body .swiper-container.swiper_amiibo .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+body .swiper-container.swiper_charger {
+  width: 70%;
+}
+
+body .swiper-container.swiper_charger .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+body .swiper-container.swiper_other {
+  width: 70%;
+}
+
+body .swiper-container.swiper_other .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+@media (max-width: 850px) {
+  body #shop_button_group {
+    width: 100% !important;
+    height: 150px !important;
+  }
+}
+
+@media (max-width: 400px) {
+  body #shop_button_group {
+    font-size: 19px !important;
+  }
+}
+/*# sourceMappingURL=store_main.css.map */

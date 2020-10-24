@@ -1,0 +1,37 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    #title{
+    width: 70%;
+    margin: auto;
+    p{
+        font-size: 24px;
+        font-weight: 900;
+    }
+
+    }
+    #content{
+        width: 70%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        .content_card{
+            width: 300px;
+            background-color: rgb(213, 219, 219);
+            margin-bottom: 50px;
+            box-shadow: 5px 10px 8px #888888;
+
+            p{
+                font-size: 18px;
+                font-weight: 500;
+            }
+
+        }
+    }
+}

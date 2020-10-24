@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Amiibo;
 use App\GameSoftwas;
+use App\Products;
 use Illuminate\Http\Request;
 
 class FrontController extends Controller
@@ -35,5 +36,38 @@ class FrontController extends Controller
     public function amiibo(){
         $amiibos=Amiibo::all();
         return view('/front/amiibo_screen',compact('amiibos'));
+    }
+    public function store_main(){
+        $hosts=Products::where('products_type','host')->get();
+        $controllers=Products::where('products_type','controller')->get();
+        $amiibos=Products::where('products_type','amiibo')->get();
+        $chargers=Products::where('products_type','charger')->get();
+        $others=Products::where('products_type','other')->get();
+        return view('/front/store_main',compact('hosts','controllers','amiibos','chargers','others'));
+    }
+    public function store_page_host(){
+        $hosts=Products::where('products_type','host')->get();
+        return view('/front/store_page_host',compact('hosts'));
+    }
+    public function store_page_controller(){
+        $controllers=Products::where('products_type','controller')->get();
+        return view('/front/store_page_controller',compact('controllers'));
+    }
+    public function store_page_amiibo(){
+        $amiibos=Products::where('products_type','amiibo')->get();
+        return view('/front/store_page_amiibo',compact('amiibos'));
+    }
+    public function store_page_charger(){
+        $chargers=Products::where('products_type','charger')->get();
+        return view('/front/store_page_charger',compact('chargers'));
+    }
+    public function store_page_other(){
+        $others=Products::where('products_type','other')->get();
+        return view('/front/store_page_other',compact('others'));
+    }
+    public function store_content($id)
+    {
+        $products=Products::find($id);
+        return view('/front/store_content',compact('products'));
     }
 }

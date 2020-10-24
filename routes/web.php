@@ -24,6 +24,13 @@ Route::get('/support','FrontController@support');
 Route::get('/service','FrontController@service');
 Route::get('/3ds','FrontController@thds');
 Route::get('/amiibo','FrontController@amiibo');
+Route::get('/store_main','FrontController@store_main');
+Route::get('/store_page_host','FrontController@store_page_host');
+Route::get('/store_page_controller','FrontController@store_page_controller');
+Route::get('/store_page_amiibo','FrontController@store_page_amiibo');
+Route::get('/store_page_charger','FrontController@store_page_charger');
+Route::get('/store_page_other','FrontController@store_page_other');
+Route::get('/store_content/{id}','FrontController@store_content');
 
 
 
@@ -35,4 +42,5 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::prefix('admin')->middleware(['auth'])->group(function () {
     Route::resource('game','GameController');
     Route::resource('amiibo','AmiiboController');
+    Route::resource('products','ProductsController');
 });

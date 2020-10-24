@@ -1,0 +1,226 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+
+    #title{
+        width: 100%;
+        height: 100px;
+        #shop_logo{
+            width: 250px;
+            height: 60px;
+            background-color: red;
+            float: left;
+            font-size: 32px;
+            color: white;
+            padding-left: 30px;
+            padding-top: 10px;
+            border-radius: 0 0 15px 15px;
+            margin-left: 50px;
+            p{
+                margin: 0;
+            }
+        }
+        img{
+            margin-top: 5px;
+        }
+    }
+    #shop_button_group{
+        width: 50%;
+        height: 50px;
+        margin: auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 24px;
+        font-weight: 900;
+        a{
+            text-decoration: none;
+            color: black;
+            transition: 0.5s;
+
+            &:hover{
+                color: red;
+                }
+        }
+       p{
+           transition: 0.5s;
+           cursor: pointer;
+           color: black;
+           &:hover{
+            color: red;
+            }
+       }
+       p.active{
+           color: red;
+       }
+
+    }
+
+    .swiper-container.swiper_shop {
+        width: 100%;
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            width: 20%;
+
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+
+          }
+          .swiper-slide.swiper-slide-next{
+              width: 40% !important;
+          }
+          .swiper-slide.swiper-slide-active{
+            width: 30% !important;
+        }
+        .swiper-slide.swiper-slide-prev{
+            width: 30% !important;
+        }
+      }
+      .type{
+        width: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .swiper-container.swiper_host {
+        width: 70%;
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+
+          }
+
+      }
+      .swiper-container.swiper_controller {
+        width: 70%;
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+
+          }
+
+      }
+      .swiper-container.swiper_amiibo {
+        width: 70%;
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+
+          }
+
+      }
+      .swiper-container.swiper_charger {
+        width: 70%;
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+
+          }
+
+      }
+      .swiper-container.swiper_other {
+        width: 70%;
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+
+          }
+
+      }
+      @media(max-width: 850px){
+          #shop_button_group{
+              width: 100% !important;
+              height: 150px !important;
+          }
+      }
+      @media(max-width: 400px){
+        #shop_button_group{
+            font-size: 19px !important;
+        }
+    }
+}

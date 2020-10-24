@@ -39,6 +39,9 @@
                         <li class="nav-item">
                             <a class="nav-link" href="/admin/amiibo">管理Amiibo</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/admin/products">管理商品</a>
+                        </li>
                     </ul>
 
                     <!-- Right Side Of Navbar -->
