@@ -29,7 +29,7 @@
     </div>
 </div>
 <div id="shop_car">
-    <a href=""><div id="shop_car_btn">加入購物車</div></a>
+    <div id="shop_car_btn" data-productid="{{$products->id}}">加入購物車</div>
 </div>
 <div id="transport">
     <img src="./img/store_content/transport.png" width="40px" alt="">
@@ -45,3 +45,28 @@
 <div id="line2"></div>
 @endsection
 
+@section('js')
+    <script>
+    $('#shop_car_btn').click(function () {
+    var product_id = $(this).data('productid');
+
+    $.ajaxSetup({
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        }
+    });
+
+    $.ajax({
+        method: 'POST',
+        url: '/addcart',
+        data: {product_id:product_id},
+        success: function (res) {
+            $('#cartTotalQuantity').text(res);
+        },
+        error: function (jqXHR, textStatus, errorThrown) {
+            console.error(textStatus + " " + errorThrown);
+        }
+    });
+    });
+    </script>
+@endsection

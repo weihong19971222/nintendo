@@ -1,0 +1,197 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* a {
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+}
+
+body #member_login {
+  width: 90%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 2px solid #a17778;
+  margin-top: 5px;
+  border-radius: 10px;
+}
+
+body #member_login #member_logo {
+  width: 150px;
+  height: 150px;
+  background-color: white;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body #member_login #member_logo_text {
+  font-weight: 900;
+  font-size: 24px;
+  color: #fa0a0b;
+  letter-spacing: 10px;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+body #member_login form input {
+  width: 400px;
+  margin-bottom: 30px;
+  border: 1px solid #a17778;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+body #member_login form input:focus {
+  border: none;
+  outline: orangered 1px solid;
+}
+
+body #member_login form span {
+  margin: 0;
+  font-size: 12px;
+  color: #a5a5a5;
+}
+
+body #member_login form #login_btn {
+  width: 200px;
+  height: 50px;
+  background-color: #a17778;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 16px;
+  color: white;
+  margin-left: 200px;
+}
+
+body #member_login form #login_btn a {
+  text-decoration: none;
+  color: white;
+}
+
+body #member_login #other_account {
+  width: 400px;
+  background-color: #efefef;
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 10px;
+}
+
+body #member_login #other_account p {
+  margin-bottom: 60px;
+  font-size: 18px;
+  color: #fa0a0b;
+  font-weight: 900;
+}
+
+body #member_login #other_account img {
+  margin-bottom: 10px;
+}
+
+body #member_login #no_account {
+  font-size: 18px;
+  color: #fa0a0b;
+  font-weight: 900;
+}
+
+body #member_login #no_account_btn {
+  width: 200px;
+  height: 50px;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 16px;
+  color: #a17778;
+  border: 2px solid #a17778;
+  font-size: 18px;
+  font-weight: 900;
+  margin-bottom: 15px;
+}
+
+body #member_login #no_account_btn a {
+  text-decoration: none;
+  color: #a17778;
+}
+
+@media (max-width: 420px) {
+  body #member_login {
+    width: 100%;
+  }
+  body #member_login #member_logo_text {
+    font-size: 18px;
+  }
+  body #member_login form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body #member_login form input {
+    width: 290px;
+  }
+  body #member_login form a #login_btn {
+    margin-left: 0;
+  }
+  body #member_login #other_account {
+    width: 310px;
+  }
+}
+/*# sourceMappingURL=member_login.css.map */

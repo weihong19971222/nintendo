@@ -1,0 +1,45 @@
+body{
+    margin: 0;
+    padding-top: 50px;
+    #success{
+        width: 80%;
+        height: 90vh;
+        background-color: rgb(255, 255, 255);
+        border: 1px solid red;
+        margin:auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color: red;
+        font-weight: 900;
+        #success_icon{
+            width: 150px;
+            height: 150px;
+            background-color: red;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+ 
+        }
+        a{
+            text-decoration: none;
+        }
+        #success_btn{
+            width: 120px;
+            height: 50px;
+            background-color: rgb(255, 255, 255);
+            border: 1px solid red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+    
+            p{
+                font-size: 18px;
+                font-weight: 900;
+                color: red;
+            }
+        }
+    }
+}

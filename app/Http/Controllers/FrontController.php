@@ -72,4 +72,16 @@ class FrontController extends Controller
         $products=Products::find($id);
         return view('/front/store_content',compact('products'));
     }
+    public function peripherals(){
+        return view('/front/peripherals_screen');
+    }
+    public function member_login(){
+        return view('/front/member_login');
+    }
+    public function member_center(){
+        return view('/front/member_center');
+    }
+    public function member_create(){
+        return view('/front/member_create');
+    }
 }

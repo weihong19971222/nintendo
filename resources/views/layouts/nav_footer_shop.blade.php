@@ -3,12 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="csrf-token" content="{{csrf_token()}}">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <title>@yield('title_name')</title>
     <link rel="icon" href="./img/m_icon.png" >
     <link rel="shortcut icon" href="./img/m_icon.png" >
     <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/store_main.css">
     @yield('css')
 </head>
 <body>
@@ -29,6 +31,7 @@
                             <a href="/switch_lite"><div class="col-12"><span>SWITCH LITE</span></div></a>
                             <a href="/3ds"><div class="col-12"><span>3DS</span></div></a>
                             <a href="/amiibo"><div class="col-12"><span>AMIIBO</span></div></a>
+                            <a href="/peripherals"><div class="col-12"><span>周邊設備</span></div></a>
                         </div>
                 </div>
                 <div id="game" data-type="2" class="ino">
@@ -45,6 +48,7 @@
                     <div class="row">
                         <a href="/service"><div class="col-12"><span>維修相關資訊</span></div></a>
                         <a href="/support"><div class="col-12"><span>Switch支援</span></div></a>
+                        <a href="/member_login"><div class="col-12"><span>會員中心</span></div></a>
                     </div>
                 </div>
                 <div id="news" data-type="5" class="ino">
@@ -99,8 +103,18 @@
             <p>Nintendo Store</p>
         </div>
         <div id="shop_car">
-            <img src="./img/store_main/shopping-cart-icon.png" width="50px" height="50px" alt="">
-            <p>0</p>
+            <a href="/add_shop_cart"><img src="./img/store_main/shopping-cart-icon.png" width="50px" height="50px" alt=""></a>
+                <span id="cartTotalQuantity">
+                    @guest
+                        0
+                    @else
+                    <?php
+                        $userId = auth()->user()->id;
+                        $cartTotalQuantity = \Cart::session($userId)->getTotalQuantity();
+                        echo $cartTotalQuantity;
+                    ?>
+                    @endguest
+                </span>
         </div></div>
     <div id="shop_button_group">
         <a href="/store_main">首頁</p></a>

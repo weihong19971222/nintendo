@@ -1,0 +1,143 @@
+*{
+    box-sizing: border-box;
+    a{
+        text-decoration: none;
+    }
+}
+body{
+    margin: 0;
+    #member_login{
+        width: 90%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid #a17778;
+        margin-top: 5px;
+        border-radius: 10px;
+        #member_logo{
+            width: 150px;
+            height: 150px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #member_logo_text{
+            font-weight: 900;
+            font-size: 24px;
+            color: #fa0a0b;
+            letter-spacing:10px;
+            font-family: 'Ubuntu', sans-serif;
+        }
+        form{
+            input{
+                width: 400px;
+                margin-bottom: 30px;
+                border: 1px solid #a17778;
+                transition: 0.5s;
+                &:focus{
+                    border: none;
+                    outline: orangered 1px solid;
+                }
+            }
+            span{
+                margin: 0;
+                font-size: 12px;
+                color: #a5a5a5;
+
+            }
+            #login_btn{
+                width: 200px;
+                height: 50px;
+                background-color: #a17778;
+                border-radius: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 16px;
+                color: white;
+                margin-left: 200px;
+                a{
+                    text-decoration: none;
+                    color: white;
+
+                }
+            }
+        }
+
+        #other_account{
+            width: 400px;
+            background-color: #efefef;
+            margin-top: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            border-radius: 10px;
+            p{
+                margin-bottom: 60px;
+                font-size: 18px;
+                color: #fa0a0b;
+                font-weight: 900;
+            }
+            img{
+                margin-bottom: 10px;
+            }
+        }
+        #no_account{
+            font-size: 18px;
+            color: #fa0a0b;
+            font-weight: 900;
+         }
+         #no_account_btn{
+            width: 200px;
+            height: 50px;
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 16px;
+            color: #a17778;
+            border: 2px solid #a17778;
+            font-size: 18px;
+            font-weight: 900;
+            margin-bottom: 15px;
+            a{
+                text-decoration: none;
+                color: #a17778;
+            }
+         }
+    }
+
+}
+@media(max-width:420px){
+    body{
+        #member_login{
+            width: 100%;
+            #member_logo_text{
+                font-size: 18px;
+            }
+            form{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                input{
+                    width: 290px;
+                }
+                a{
+                    #login_btn{
+                        margin-left: 0;
+                    }
+                }
+
+            }
+            #other_account{
+                width: 310px;
+            }
+        }
+    }
+}
