@@ -23,6 +23,7 @@ Route::get('/switch_lite','FrontController@switch_lite');
 Route::get('/support','FrontController@support');
 Route::get('/service','FrontController@service');
 Route::get('/news','FrontController@news');
+Route::get('/news_info_{news_id}', 'FrontController@news_info');
 Route::get('/3ds','FrontController@thds');
 Route::get('/amiibo','FrontController@amiibo');
 Route::get('/peripherals','FrontController@peripherals');
@@ -62,4 +63,5 @@ Route::prefix('admin')->middleware(['auth'])->group(function () {
     Route::resource('amiibo','AmiiboController');
     Route::resource('products','ProductsController');
     Route::resource('order','OrderController');
+    Route::resource('news','NewsController');
 });

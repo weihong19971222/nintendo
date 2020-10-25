@@ -74,7 +74,7 @@
                 </div>
             </div>
             <div class="row">
-                @foreach ($gamesoftwas2 as $gamesoftwa)
+                @foreach ($gamesoftwas as $gamesoftwa)
                     <div class="col-lg-3 col-md-4 col-6">
                         <img src="{{$gamesoftwa->game_image}}" alt="">
                         <div class="game_type">

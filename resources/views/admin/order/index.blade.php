@@ -6,6 +6,7 @@
 
 @section('content')
 
+
 <table id="example" class="table table-striped table-bordered" style="width:100%">
     <thead>
         <tr>
@@ -34,7 +35,23 @@
                 <td>{{$order->deliverymethod}}</td>
                 <td>{{$order->paymentmethod}}</td>
                 <td>{{$order->created_at}}</td>
-                <td>{{$order->id}}</td>
+                <td>
+                    @foreach ($order->orderItems as $b)
+                        @foreach ($test as $t)
+                            @if ($t->id==$b->product_id)
+                                {{-- @foreach ($t as $t1)
+                                {{$t1->products_name}}
+
+                                @endforeach --}}
+                                {{$t->products_name}}
+                            @endif
+                        @endforeach
+
+
+                        {{-- <img src="" alt=""> --}}
+                        {{-- {{$b->product_id}} --}}
+                    @endforeach
+                </td>
                 {{-- <td style="width: 100px">
                     <a href="/admin/products/{{$order->id}}/edit" class="btn btn-sm btn-secondary">編輯</a>
                     <button data-ptid="{{$order->id}}" class="btn btn-sm btn btn-danger btn-del">刪除</button>

@@ -28,7 +28,8 @@ body #member_login {
       -ms-flex-align: center;
           align-items: center;
   border: 2px solid #a17778;
-  margin-top: 5px;
+  margin-top: 100px;
+  margin-bottom: 50px;
   border-radius: 10px;
 }
 

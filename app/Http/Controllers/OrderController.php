@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Order;
 use App\OrderItems;
+use App\Products;
 use Illuminate\Http\Request;
 
 class OrderController extends Controller
@@ -16,7 +17,10 @@ class OrderController extends Controller
     public function index()
     {
         $orders=Order::with('orderItems')->get();
-        return view('admin.order.index',compact('orders'));
+        $products=OrderItems::with('product')->get();
+        $test=Products::all();
+        // dd($orders[1]->orderItems);
+        return view('admin.order.index',compact('orders',"products","test"));
     }
 
     /**

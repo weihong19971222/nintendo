@@ -40,6 +40,9 @@
                             <a class="nav-link" href="/admin/amiibo">管理Amiibo</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link" href="/admin/news">管理新聞</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" href="/admin/products">管理商品</a>
                         </li>
                         <li class="nav-item">

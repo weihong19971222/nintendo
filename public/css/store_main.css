@@ -206,6 +206,7 @@ body .swiper-container.swiper_charger .swiper-slide {
 }
 
 body .swiper-container.swiper_other {
+  margin-bottom: 50px;
   width: 70%;
 }
 

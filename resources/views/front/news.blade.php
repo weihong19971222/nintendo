@@ -12,20 +12,31 @@
             <p id="p_second"></p>
             <div id="card_group" class="container">
                 <div id="row_first" class="row">
-                    <div class="col-4">
+                    @foreach ($news as $new)
+                        <div class="col-4">
+                            <p class="news_date mt-2">{{$new->news_date}}</p>
+                            <img class="news_top_img" src="{{$new->news_img}}" alt="">
+                            <p class="news_cont mt-2">{{$new->news_title}}</p>
+                            <a href="/news_info_{{$new->id}}"><div class="read_more"><img src="./img/news/read_more.png" alt=""></div></a>
+                        </div>
+                    @endforeach
+
+                    {{-- <div class="col-4">
                         <p class="news_date mt-2">2020.10.10</p>
                         <img class="news_top_img" src="./img/news/1.jpg" alt="">
-                        <!-- 最大 32個字 -->
                         <p class="news_cont mt-2">字測試文字測試文字測試文字測試文字測字測試文字測試文字文字測試文</p>
                         <div class="read_more"><img src="./img/news/read_more.png" alt=""></div>
                     </div>
                     <div class="col-4"></div>
-                    <div class="col-4"></div>
+                    <div class="col-4"></div> --}}
                 </div>
-                <div id="row_second" class="row">
+                {{-- <div id="row_second" class="row">
                     <div class="col-4"></div>
                     <div class="col-4"></div>
                     <div class="col-4"></div>
+                </div> --}}
+                <div class="w-100 d-flex justify-content-center">
+                    {{ $news->links() }}
                 </div>
             </div>
         </section>

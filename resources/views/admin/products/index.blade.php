@@ -5,7 +5,6 @@
 @endsection
 
 @section('content')
-
 <a class="btn btn-info mb-3" href="/admin/products/create">新增商品</a>
 <table id="example" class="table table-striped table-bordered" style="width:100%">
     <thead>

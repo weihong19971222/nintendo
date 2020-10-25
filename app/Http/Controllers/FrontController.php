@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Amiibo;
 use App\GameSoftwas;
+use App\News;
 use App\Products;
 use Illuminate\Http\Request;
 
@@ -31,7 +32,12 @@ class FrontController extends Controller
         return view('/front/service_screen');
     }
     public function news(){
-        return view('/front/news');
+        $news=News::paginate(6);
+        return view('/front/news',compact('news'));
+    }
+    public function news_info($news_id){
+        $news_list=News::where('id','=',$news_id)->first();
+        return view('front/news_info', compact('news_list'));
     }
     public function thds(){
         return view('/front/3ds_screen');
