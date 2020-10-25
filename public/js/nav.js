@@ -32,11 +32,13 @@
       $("#nav_").css("opacity","0");
       $("#nav_").css("pointer-events","none");
       $("#menu").css("opacity","1");
+      $("html").removeClass("noscroll");
   });
   $("#menu").click(function(){
       $("#nav_").css("pointer-events","auto");
       $("#nav_").css("opacity","1");
       $("#menu").css("opacity","0");
+      $("html").addClass("noscroll");
 
   });
 

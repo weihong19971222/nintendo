@@ -1,0 +1,58 @@
+body{
+    margin: 0;
+    position: relative;
+    #po{
+        position: absolute;
+        width: 3%;
+        height: 90%;
+        top: 10%;
+        right: 2%;
+        background-color: red;  
+        #a{
+            width: 100%;   
+            margin: auto;    
+            background-color: rgb(199, 199, 199);   
+            position: relative; 
+            img{
+                width: 150%;  
+                position: absolute;
+                bottom: -10px;
+                left: 50%;
+                transform: translate(-50%,0);
+            }
+        }   
+    }
+    main{
+        padding-top: 80px;
+        .container{
+            #date{
+                border-top: 1px solid black;
+            }
+            #main_title{
+                margin-top: 50px;
+                text-align: center;
+                font-weight: 900;
+            }
+            #main_img{
+                margin-top: 20px;
+                width: 100%;
+                img{
+                    width: 100%;
+                }
+            }
+            #text_cont{
+                margin-top: 20px;
+            }
+            #yt_video{
+                width: 100%;
+                margin: 50px 0;
+                display: flex;
+                justify-content: center;
+                iframe{
+                    width: 70%;
+                    height: 350px;
+                }
+            }
+        }
+    }
+}

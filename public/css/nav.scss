@@ -36,6 +36,18 @@
 html{
     scroll-behavior:smooth;
 }
+// 鎖定滾輪
+html.noscroll {
+    position: fixed;
+    overflow-y: scroll;
+    width: 100%;
+}
+
+html.fixWindow {
+    position: fixed;
+    width: 100%;
+}
+
 body{
     margin: 0;
     #go_to_top{

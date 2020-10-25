@@ -1,0 +1,145 @@
+@mixin w992{
+    @media (max-width:992px){
+        @content;
+    }
+}
+@mixin w768{
+    @media (max-width:768px){
+        @content;
+    }
+}
+@mixin w576{
+    @media (max-width:576px){
+        @content;
+    }
+}
+
+body{
+    margin: 0;
+
+    main{
+        margin-top:80px ;
+        margin-bottom: 50px;
+        padding-top:40px ;
+        position: relative;
+        overflow: hidden;
+        @include w768{
+            padding-top:30px;
+        }
+        #news_top{
+            width: 100%;
+            #p_first{
+                top: 10px;
+                position: absolute;
+                animation: marquee_left 10s linear infinite;
+                color:#CC1A1E ;
+                border-bottom: 2px solid #CC1A1E;
+                @include w768{
+                    top: 0;
+                    font-size:14px;
+                }
+            }
+            #p_second{
+                top: 410px;
+                position: absolute;
+                color:white ;
+                -webkit-text-stroke: 0.5px #CC1A1E;
+                animation: marquee_right 10s linear infinite;
+                border-bottom: 2px solid #CC1A1E;
+                @include w992{
+                    top: 330px;
+                }
+                @include w768{
+                    top: 270px;
+                    font-size:14px;
+                }
+            }
+            #card_group{
+                @include w576{
+                    padding: 0;
+                }
+                .row{
+                    margin: auto;
+                    width: 100%;
+                    height: 360px;
+                    @include w992{
+                        height: 280px;
+                    }
+                    @include w768{
+                        height: 240px;
+                    }
+                    .col-4:first-child{
+                        border-left: 2px solid  #e7dddc;
+                    }
+                    .col-4{
+                        border-right: 2px solid  #e7dddc;
+                        border-bottom: 1px solid #e2e2e2;
+                        background-color: #f1f1f1;
+                        position: relative;
+                        .news_top_img{
+                            width: 100%;
+                            box-shadow:5px 5px 5px rgba(0, 0, 0, 0.5);
+                        }
+                        .news_date{
+                            width: 100%;
+                            position: relative;
+                            @include w768{
+                                font-size: 12px;
+                            }
+                            &::before{
+                                position: absolute;
+                                top: 2px;
+                                content: '';
+                                width: 60px;
+                                border-top: 1.5px solid black;
+                            }
+                        }
+                        .news_cont{
+                            font-family: DFKai-sb;
+                            font-size: 16px;
+                            @include w992{
+                                font-size:14px;
+                            }
+                            @include w768{
+                                font-size:12px;
+                            }
+                        }
+                        .read_more{
+                            position: absolute;
+                            bottom: 10px;
+                            right: 20px;
+                            height: 24px;
+                            @include w992{
+                                height: 15px;
+                                bottom: 20px;
+                            }
+                            cursor: pointer;
+                            img{
+                                height: 100%;
+                            }
+                        }
+
+                    }
+                }
+                #row_second{
+                    margin-top:40px ;
+                    @include w768{
+                        margin-top:30px ;
+                    }
+                }
+            }
+        }
+    }
+    #go_to_top{
+        display: none;
+    }
+
+}
+@keyframes marquee_left {
+    0% { left: 0; }
+    100% { left: -100%; }
+}
+@keyframes marquee_right {
+    0% { right: 0; }
+    100% { right: -100%; }
+}

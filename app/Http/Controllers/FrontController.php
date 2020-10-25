@@ -30,6 +30,9 @@ class FrontController extends Controller
     public function service(){
         return view('/front/service_screen');
     }
+    public function news(){
+        return view('/front/news');
+    }
     public function thds(){
         return view('/front/3ds_screen');
     }

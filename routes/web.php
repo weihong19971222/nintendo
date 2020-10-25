@@ -22,6 +22,7 @@ Route::get('/switch','FrontController@switch');
 Route::get('/switch_lite','FrontController@switch_lite');
 Route::get('/support','FrontController@support');
 Route::get('/service','FrontController@service');
+Route::get('/news','FrontController@news');
 Route::get('/3ds','FrontController@thds');
 Route::get('/amiibo','FrontController@amiibo');
 Route::get('/store_main','FrontController@store_main');
