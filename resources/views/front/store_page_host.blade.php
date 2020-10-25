@@ -44,7 +44,7 @@
     </div>
 <div id="content">
     @foreach ($hosts as $host)
-   <a href="/store_content/{{$host->id}}"> <div class="content_card">
+   <a href="/store_content_{{$host->id}}"> <div class="content_card">
         <img src="{{$host->products_image}}" width="100%" alt="">
         <p>{{$host->products_name}}</p>
         <p>${{$host->products_price}}</p>

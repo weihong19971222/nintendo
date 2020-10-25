@@ -44,7 +44,7 @@
     </div>
 <div id="content">
     @foreach ($amiibos as $amiibo)
-    <a href="{{$amiibo->id}}"><div class="content_card">
+    <a href="/store_content_{{$amiibo->id}}"><div class="content_card">
         <img src="{{$amiibo->products_image}}" width="100%" alt="">
         <p>{{$amiibo->products_name}}</p>
         <p>${{$amiibo->products_price}}</p>

@@ -20,26 +20,27 @@ body{
     }
     #content{
         width: 70%;
-        height: 600px;
         margin: auto;
         display: flex;
-      
+
         #content_text{
             width: 30%;
-            height: 600px;
         }
         #content_pic{
             width: 70%;
-            height: 600px;
             display: flex;
             justify-content: center;
             align-items: center;
+            overflow: hidden;
         }
     }
     #shop_car{
         width: 70%;
         height: 50px;
         margin: auto;
+        a{
+            text-decoration: none;
+        }
         #shop_car_btn{
             width: 150px;
             height: 50px;

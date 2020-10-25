@@ -65,8 +65,7 @@ class FrontController extends Controller
         $others=Products::where('products_type','other')->get();
         return view('/front/store_page_other',compact('others'));
     }
-    public function store_content($id)
-    {
+    public function store_content($id){
         $products=Products::find($id);
         return view('/front/store_content',compact('products'));
     }

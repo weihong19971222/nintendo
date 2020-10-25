@@ -44,7 +44,7 @@
     </div>
 <div id="content">
     @foreach ($controllers as $controller)
-    <a href="{{$controller->id}}"><div class="content_card">
+    <a href="/store_content_{{$controller->id}}"><div class="content_card">
         <img src="{{$controller->products_image}}" width="100%" alt="">
         <p>{{$controller->products_name}}</p>
         <p>${{$controller->products_price}}</p>

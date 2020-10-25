@@ -30,7 +30,7 @@ Route::get('/store_page_controller','FrontController@store_page_controller');
 Route::get('/store_page_amiibo','FrontController@store_page_amiibo');
 Route::get('/store_page_charger','FrontController@store_page_charger');
 Route::get('/store_page_other','FrontController@store_page_other');
-Route::get('/store_content/{id}','FrontController@store_content');
+Route::get('/store_content_{id}','FrontController@store_content');
 
 
 
