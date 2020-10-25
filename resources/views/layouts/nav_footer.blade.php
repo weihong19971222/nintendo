@@ -29,6 +29,7 @@
                             <a href="/switch_lite"><div class="col-12"><span>SWITCH LITE</span></div></a>
                             <a href="/3ds"><div class="col-12"><span>3DS</span></div></a>
                             <a href="/amiibo"><div class="col-12"><span>AMIIBO</span></div></a>
+                            <a href="/peripherals"><div class="col-12"><span>周邊設備</span></div></a>
                         </div>
                 </div>
                 <div id="game" data-type="2" class="ino">
@@ -45,6 +46,7 @@
                     <div class="row">
                         <a href="/service"><div class="col-12"><span>維修相關資訊</span></div></a>
                         <a href="/support"><div class="col-12"><span>Switch支援</span></div></a>
+                        <a href="/member_login"><div class="col-12"><span>會員中心</span></div></a>
                     </div>
                 </div>
                 <div id="news" data-type="5" class="ino">

@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  padding-top: 50px;
+}
+
+body #success {
+  width: 80%;
+  height: 90vh;
+  background-color: white;
+  border: 1px solid red;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: red;
+  font-weight: 900;
+}
+
+body #success #success_icon {
+  width: 150px;
+  height: 150px;
+  background-color: red;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body #success a {
+  text-decoration: none;
+}
+
+body #success #success_btn {
+  width: 120px;
+  height: 50px;
+  background-color: white;
+  border: 1px solid red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body #success #success_btn p {
+  font-size: 18px;
+  font-weight: 900;
+  color: red;
+}
+/*# sourceMappingURL=success.css.map */

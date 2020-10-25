@@ -1,0 +1,643 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    #peripherals_loading{
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        overflow: hidden;
+        &::before
+        {
+            content: '';
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            z-index: -1;
+            background-image: url('../img/peripherals_screen/peripherals_loading.jpg');
+            background-position: bottom;
+            background-size: cover;
+            background-repeat: no-repeat;
+            animation-name: peripherals_loading;
+            animation-duration: 5s;
+            animation-fill-mode: forwards;
+            @keyframes peripherals_loading {
+                0%{filter: brightness(110%)}
+                100%{filter: brightness(80%)}
+    
+            }
+        }
+       
+        img{
+            position: absolute;
+            left: 50%;
+            bottom: -35%;
+            transform: translateX(-50%);
+            animation: switchcontroller 5s forwards,switchcontroller2 6s infinite 4s;
+
+        }
+        @keyframes switchcontroller {
+            0%{bottom: -35% ;filter: brightness(50%)}
+            80%{bottom: 55%;filter: brightness(130%)}
+            100%{bottom: 50%;filter: brightness(150%)}
+
+        }
+        @keyframes switchcontroller2 {
+            0%{bottom: 55% ;}
+            50%{bottom: 50%;}
+            100%{bottom: 55%;}
+
+        }
+    }
+    #SwitchProController{
+        width: 100%;
+        height: 100vh;
+        margin-top: 100px;
+
+        #SwitchProControlleTitle{
+            width: 60%;
+            height: 15%;
+            background-color: rgba(253, 0, 0, 0.836);
+            font-size: 36px;
+            color: white;
+            text-align: right;
+            padding-top:25px ;
+            font-weight: 900;
+            p{
+                margin: 0;
+
+            }
+        }
+        #SwitchProControlleContent{
+            width: 100%;
+            height: 35%;
+            margin-top: 100px;
+            .SwitchProControlleContent_div{
+                width: 100%;
+                height: 33.33%;
+                display: flex;
+                justify-content: center;
+                p{
+                    margin: 0;
+                    line-height: 50px;
+                    margin-left: 10px;
+                    font-size: 17px;
+                    font-weight: 900;
+
+
+                }
+                img{
+                    margin-left: 10px;
+                }
+            }
+        } 
+        #SwitchProControllePic{
+            width: 100%;
+            height: 36.4%;
+            background-image: url('../img/peripherals_screen/img02.jpg');
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        #SwitchProControllePic2{
+            width: 100%;
+            height: 36.4%;
+            background-image: url('../img/peripherals_screen/img01.jpg');
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+    }
+    #peripherals_JoyCon{
+        width: 100%;
+        height: 100vh;
+        background-image: url('../img/peripherals_screen/Joy-Con.jpg');
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        img{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+     
+        }
+        #joyconleft{
+            left: 40%;
+            animation-name:joyconleft;
+            animation-duration: 5s;
+            animation-fill-mode: none;
+            animation-iteration-count: infinite;
+            @keyframes joyconleft{
+                0%{transform: translate(0%, 0%);}
+                50%{transform: translate(0%, 20%);}
+                100%{transform: translate(0%, 0%);}
+
+            }
+        }
+        #joyconright{
+            left: 53%;
+            animation-name:joyconright;
+            animation-duration: 5s;
+            animation-fill-mode: none;
+            animation-iteration-count: infinite;
+            @keyframes joyconright{
+                0%{transform: translate(0%, 0%);}
+                50%{transform: translate(0%, -20%);}
+                100%{transform: translate(0%, 0%);}
+
+            }
+        }
+        
+    }
+    #peripherals_circle{
+        width: 100%;
+        height: 100vh;
+        background-image: url('../img/peripherals_screen/mario-kart-81.jpg');
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        img{
+            position:absolute;
+            top: 30%;
+            left:30%;
+            animation-name: circle;
+            animation-duration: 2s;
+            animation-fill-mode: forwards;
+            animation-iteration-count: infinite;
+            @keyframes circle {
+                0%{transform: rotate(0deg);}
+                100%{transform: rotate(360deg);}
+            }
+        }
+    }
+    #circle_content{
+        width: 100%;
+        height: 100vh;
+        margin-top: 100px;
+        #circle_title{
+            width: 60%;
+            height: 15%;
+            background-color: rgb(255, 0, 0);
+            font-size: 36px;
+            color: white;
+            text-align: right;
+            font-weight: 900;
+            padding-top:1px ;
+        }
+        #circle_info{
+            width: 100%;
+            height: 85%;
+            display: flex;
+            #circle_info_pic{
+                width: 40%;
+                height: 100%;
+                position: relative;
+                img{
+                    position: absolute;
+                    width: 100%;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+            }
+            #circle_info_text{
+                width: 60%;
+                height: 100%;
+                .circle_info_text_content{
+                    width: 100%;
+                    height: 25%;
+                    display: flex;
+                    padding-left: 50px;
+                    padding-top: 25px;
+                    
+                    p{
+                        margin: 0;
+                        padding-top: 10px;
+                        padding-left: 10px;
+                        font-weight: 900;
+
+                    }
+                   
+                }
+                .circle_info_text_content:nth-child(1){
+                    padding-top:100px;
+
+                }
+                .circle_info_text_content:nth-child(2){
+                    padding-top:0;
+
+                }
+                .circle_info_text_content:nth-child(4){
+                    color: gray;
+
+                }
+            }
+        }
+    }
+    #other{
+        width: 100%;
+        height: 20vh;
+        background-color: rgb(255, 255, 255);
+        border-top: 1px solid red;
+        border-bottom: 1px solid red;
+        font-size: 48px;
+        position: relative;
+        p{
+            position: absolute;
+            top: 0%;
+            left: 45%;
+            color: red;
+        }
+
+    }
+    #switchbag_content{
+        width: 100%;
+        height: 100vh;
+        margin-top: 100px;
+        #switchbag_title{
+            width: 60%;
+            height: 15%;
+            background-color: rgb(255, 0, 0);
+            font-size: 32px;
+            color: white;
+            text-align: left;
+            font-weight: 900;
+            float: right;
+        }
+        #switchbag_info{
+            width: 100%;
+            height: 85%;
+            
+            display: flex;
+            #switchbag_info_pic{
+                width: 40%;
+                height: 100%;
+                position: relative;
+                img{
+                    position: absolute;
+                    width: 100%;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+            }
+            #switchbag_info_text{
+                width: 60%;
+                height: 100%;
+                .switchbag_info_text_content{
+                    width: 100%;
+                    height: 25%;
+                    display: flex;
+                    padding-left: 30%;
+                    padding-top: 25px;
+
+                    
+                    p{
+                        margin: 0;
+                        padding-top: 10px;
+                        padding-left: 10px;
+                        font-weight: 900;
+
+                    }
+                   
+                }
+                .switchbag_info_text_content:nth-child(1){
+                    padding-top:100px;
+
+                }
+                .switchbag_info_text_content:nth-child(2){
+                    padding-top:0;
+
+                }
+                .switchbag_info_text_content:nth-child(4){
+                    color: gray;
+
+                }
+            }
+        }
+    }
+    #switchlitebag_content{
+        width: 100%;
+        height: 100vh;
+        margin-top: 100px;
+        #switchlitebag_title{
+            width: 60%;
+            height: 15%;
+            background-color: rgb(255, 0, 0);
+            font-size: 32px;
+            color: white;
+            text-align: right;
+            font-weight: 900;
+            padding-top:1px ;
+        }
+        #switchlitebag_info{
+            width: 100%;
+            height: 85%;
+            display: flex;
+            #switchlitebag_info_pic{
+                width: 40%;
+                height: 100%;
+                position: relative;
+                img{
+                    position: absolute;
+                    width: 100%;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+            }
+            #switchlitebag_info_text{
+                width: 60%;
+                height: 100%;
+                .switchlitebag_info_text_content{
+                    width: 100%;
+                    height: 25%;
+                    display: flex;
+                    padding-left: 50px;
+                    padding-top: 25px;
+                    
+                    p{
+                        margin: 0;
+                        padding-top: 10px;
+                        padding-left: 10px;
+                        font-weight: 900;
+
+                    }
+                   
+                }
+                .switchlitebag_info_text_content:nth-child(1){
+                    padding-top:100px;
+
+                }
+                .switchlitebag_info_text_content:nth-child(2){
+                    padding-top:0;
+
+                }
+                .switchlitebag_info_text_content:nth-child(4){
+                    color: gray;
+
+                }
+            }
+        }
+    }
+    #ProtectiveShell_content{
+        width: 100%;
+        height: 100vh;
+        margin-top: 100px;
+        #ProtectiveShell_title{
+            width: 60%;
+            height: 15%;
+            background-color: rgb(255, 0, 0);
+            font-size: 32px;
+            color: white;
+            text-align: left;
+            font-weight: 900;
+            float: right;
+        }
+        #ProtectiveShell_info{
+            width: 100%;
+            height: 85%;
+            
+            display: flex;
+            #ProtectiveShell_info_pic{
+                width: 40%;
+                height: 100%;
+                position: relative;
+                img{
+                    position: absolute;
+                    width: 100%;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+            }
+            #ProtectiveShell_info_text{
+                width: 60%;
+                height: 100%;
+                .ProtectiveShell_info_text_content{
+                    width: 100%;
+                    height: 25%;
+                    display: flex;
+                    padding-left: 30%;
+                    padding-top: 25px;
+
+                    
+                    p{
+                        margin: 0;
+                        padding-top: 10px;
+                        padding-left: 10px;
+                        font-weight: 900;
+
+                    }
+                   
+                }
+                .ProtectiveShell_info_text_content:nth-child(1){
+                    padding-top:100px;
+
+                }
+                .ProtectiveShell_info_text_content:nth-child(2){
+                    padding-top:0;
+
+                }
+                .ProtectiveShell_info_text_content:nth-child(4){
+                    color: gray;
+
+                }
+            }
+        }
+    }
+    #bracket_content{
+        width: 100%;
+        height: 100vh;
+        margin-top: 100px;
+        #bracket_title{
+            width: 60%;
+            height: 15%;
+            background-color: rgb(255, 0, 0);
+            font-size: 32px;
+            color: white;
+            text-align: right;
+            font-weight: 900;
+            padding-top:1px ;
+        }
+        #bracket_info{
+            width: 100%;
+            height: 85%;
+            display: flex;
+            #bracket_info_pic{
+                width: 40%;
+                height: 100%;
+                position: relative;
+                img{
+                    position: absolute;
+                    width: 100%;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+            }
+            #bracket_info_text{
+                width: 60%;
+                height: 100%;
+                .bracket_info_text_content{
+                    width: 100%;
+                    height: 25%;
+                    display: flex;
+                    padding-left: 50px;
+                    padding-top: 25px;
+                    
+                    p{
+                        margin: 0;
+                        padding-top: 10px;
+                        padding-left: 10px;
+                        font-weight: 900;
+
+                    }
+                   
+                }
+                .bracket_info_text_content:nth-child(1){
+                    padding-top:100px;
+
+                }
+                .bracket_info_text_content:nth-child(2){
+                    padding-top:0;
+
+                }
+                .bracket_info_text_content:nth-child(4){
+                    color: gray;
+
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:867px){
+    #SwitchProControlleTitle{
+        font-size: 24px !important;
+        padding-top:35px !important ;
+
+    }
+}
+@media(max-width:414px){
+    #peripherals_circle{
+        img{
+            top: 45%  !important;
+            left: 41% !important;
+        }
+
+    }
+    #circle_title{
+        font-size: 25px !important;
+    }
+    #circle_info_text{
+        .circle_info_text_content:nth-child(1){
+            padding-top: 0 !important;
+            height: 10% !important;
+        }
+        .circle_info_text_content:nth-child(2){
+            height: 10% !important;
+            display: flex !important;
+            flex-direction: column !important;
+        }
+        .circle_info_text_content:nth-child(3){
+            height: 40% !important;
+        }
+        .circle_info_text_content:nth-child(4){
+            height: 40% !important;
+        }
+    }
+    #switchbag_title{
+        font-size: 24px !important;
+    }
+    #switchbag_info_text{
+        .switchbag_info_text_content:nth-child(1){
+            padding-top: 0!important;
+            height: 10%!important;
+
+        }
+        .switchbag_info_text_content:nth-child(2){
+            height: 10% !important;
+
+        }
+        .switchbag_info_text_content:nth-child(3){
+            height: 40% !important;
+            padding-top: 0 !important;
+        }
+        .switchbag_info_text_content:nth-child(4){
+            height: 40% !important;
+        }
+
+    }
+    #switchlitebag_content{
+        #switchlitebag_title{
+            font-size: 20px!important;
+        }
+        #switchlitebag_info_text{
+            .switchlitebag_info_text_content:nth-child(1){
+                padding-top: 0!important;
+                height: 10%!important;
+            }
+            .switchlitebag_info_text_content:nth-child(2){
+                height: 10%!important;
+                display: flex !important;
+                flex-direction: column !important;
+            }
+             .switchlitebag_info_text_content:nth-child(3){
+                height: 40% !important;
+            }
+             .switchlitebag_info_text_content:nth-child(4){
+                height: 40% !important;
+            }
+        }
+
+    }
+
+    #ProtectiveShell_title{
+        font-size: 20px!important;
+    }
+    #ProtectiveShell_info_text{
+        .ProtectiveShell_info_text_content:nth-child(1){
+            padding-top: 0!important;
+            height: 10%!important;
+        }
+        .ProtectiveShell_info_text_content:nth-child(2){
+            height: 10%!important;
+        }
+        .ProtectiveShell_info_text_content:nth-child(3){
+            height: 40% !important;
+        }
+         .ProtectiveShell_info_text_content:nth-child(4){
+            height: 40% !important;
+        }
+    }
+    #bracket_title{
+        font-size: 20px !important;
+    }
+    #bracket_info_text{
+        .bracket_info_text_content:nth-child(1){
+            padding-top: 0!important;
+            height: 10%!important;
+        }
+        .bracket_info_text_content:nth-child(2){
+            height: 10%!important;
+            display: flex !important;
+            flex-direction: column !important;
+        }
+        .bracket_info_text_content:nth-child(3){
+            height: 40% !important;
+        }
+         .bracket_info_text_content:nth-child(4){
+            height: 40% !important;
+            padding-top: 40px !important;
+        }
+    }
+    #SwitchProControlleTitle{
+        font-size: 22px !important;
+    }
+    #SwitchProControlleContent{
+        margin-top: 30px !important;
+        .SwitchProControlleContent_div{
+            p{
+                font-size: 15px !important;
+            }
+        }
+    }
+}

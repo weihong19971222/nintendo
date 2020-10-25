@@ -1,0 +1,266 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: auto;
+}
+
+body #create {
+  width: 80%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body #create p {
+  font-size: 18px;
+  color: red;
+  font-weight: 900;
+  text-align: center;
+}
+
+body #create #member_icon {
+  background-color: red;
+  width: 150px;
+  height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+}
+
+body #create .account_btn {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 10px;
+}
+
+body #create .account_btn a {
+  width: 40%;
+  text-decoration: none;
+}
+
+body #create .account_btn a img {
+  margin-left: 5px;
+  width: 100% !important;
+}
+
+body #create_form {
+  width: 80%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 100px;
+  border: 10px solid #e10400;
+  padding-bottom: 50px;
+}
+
+body #create_form h2 {
+  color: #e10400;
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+body #create_form form .form_group {
+  width: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+body #create_form form .form_group small {
+  color: #a0a0a0;
+}
+
+body #create_form form .form_group input {
+  width: 319px;
+  height: 30px;
+  border: none;
+  border: 2px solid #b8999e;
+}
+
+body #create_form form .form_group input:focus {
+  border: none;
+  outline: 2px solid #e10400;
+}
+
+body #create_form form .form_group select {
+  width: 319px;
+  border: none;
+  border: 2px solid #b8999e;
+}
+
+body #create_form form .form_group select:focus {
+  border: none;
+  outline: 2px solid #e10400;
+}
+
+body #create_form form .form_group label {
+  font-size: 24px;
+  font-weight: 900;
+  color: #b8999e;
+}
+
+body #create_form #info {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-top: 1px solid #b8999e;
+  border-bottom: 1px solid #b8999e;
+  margin-bottom: 50px;
+}
+
+body #create_form #info p {
+  margin: 0;
+  color: #b8999e;
+}
+
+body #create_form #info #info_check {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 50px;
+}
+
+body #create_form #info #info_check2 {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 50px;
+}
+
+body #create_form #create_btn {
+  width: 150px;
+  height: 50px;
+  background-color: #b8999e;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 18px;
+  color: white;
+  margin: auto;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+body #create_form #create_btn:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+body #create_form a {
+  text-decoration: none;
+}
+
+@media (max-width: 1020px) {
+  body #create {
+    width: 100%;
+  }
+  body #create .account_btn {
+    width: 100%;
+  }
+  body #create_form {
+    width: 100%;
+  }
+}
+
+@media (max-width: 545px) {
+  body #create .account_btn {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body #create .account_btn a {
+    width: 80% !important;
+  }
+  body #create_form {
+    margin-top: 0;
+  }
+  body #create_form form .form_group {
+    width: 300px;
+  }
+  body #create_form form .form_group input {
+    width: 150px;
+  }
+  body #create_form form .form_group .form_width {
+    width: 150px;
+  }
+  body #create_form form .form_group select {
+    width: 150px;
+  }
+}
+/*# sourceMappingURL=member_create.css.map */

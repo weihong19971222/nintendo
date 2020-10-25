@@ -71,6 +71,7 @@ body #shop_car #shop_car_btn {
   line-height: 50px;
   padding-left: 15px;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 body #transport {

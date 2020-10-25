@@ -1,0 +1,427 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+body #process_group {
+  width: 80%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body #process_group .process {
+  width: 150px;
+  height: 150px;
+  background-color: #fc0000;
+  border-radius: 50%;
+  font-size: 16px;
+  font-weight: 900;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body #process_group .process p {
+  margin: 0;
+}
+
+body #process_group .process_arrow {
+  width: 50px;
+  height: 50px;
+}
+
+body #title {
+  width: 100%;
+  height: 30px;
+  background-color: red;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 100px;
+}
+
+body #title p {
+  margin: 0;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+  font-weight: 900;
+  font-size: 18px;
+}
+
+body #title #name {
+  width: 30%;
+  height: 100%;
+}
+
+body #title #price {
+  width: 20%;
+  height: 100%;
+}
+
+body #title #number {
+  width: 20%;
+  height: 100%;
+}
+
+body #title #total_price {
+  width: 20%;
+  height: 100%;
+}
+
+body #title #del {
+  width: 10%;
+  height: 100%;
+}
+
+body .title_info {
+  width: 100%;
+  height: 300px;
+  background-color: white;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .title_info .name_info {
+  width: 30%;
+  height: 100%;
+  border-left: 1px solid darkred;
+  border-bottom: 1px solid darkred;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .title_info .name_info p {
+  margin: 0;
+  text-align: center;
+  color: #9e2525;
+  font-weight: 900;
+  font-size: 18px;
+}
+
+body .title_info .price_info {
+  width: 20%;
+  height: 100%;
+  border-bottom: 1px solid darkred;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .title_info .price_info p {
+  margin: 0;
+  text-align: center;
+  line-height: 300px;
+  color: #9e2525;
+  font-weight: 900;
+  font-size: 18px;
+}
+
+body .title_info .number_info {
+  width: 20%;
+  height: 100%;
+  border-bottom: 1px solid darkred;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .title_info .number_info input {
+  width: 50px;
+}
+
+body .title_info .total_price_info {
+  width: 20%;
+  height: 100%;
+  border-bottom: 1px solid darkred;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .title_info .total_price_info p {
+  margin: 0;
+  text-align: center;
+  line-height: 300px;
+  color: #9e2525;
+  font-weight: 900;
+  font-size: 18px;
+}
+
+body .title_info .del_info {
+  width: 10%;
+  height: 100%;
+  background-color: gray;
+  cursor: pointer;
+}
+
+body .title_info .del_info p {
+  margin: 0;
+  text-align: center;
+  line-height: 300px;
+  color: #9e2525;
+  font-weight: 900;
+  font-size: 18px;
+}
+
+body #settlement {
+  width: 100%;
+  height: 150px;
+  background-color: red;
+  position: relative;
+}
+
+body #settlement #settlement_check {
+  width: 350px;
+  height: 130px;
+  background-color: white;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+body #settlement #settlement_check #all_total {
+  width: 100%;
+  height: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body #settlement #settlement_check #all_total p {
+  margin: auto;
+  color: red;
+  font-weight: 900;
+  font-size: 18px;
+}
+
+body #settlement #settlement_check #car_total {
+  width: 100%;
+  height: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body #settlement #settlement_check #car_total p {
+  margin: auto;
+  color: red;
+  font-weight: 900;
+  font-size: 18px;
+}
+
+body #settlement #settlement_check #should_pay_total {
+  width: 100%;
+  height: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body #settlement #settlement_check #should_pay_total p {
+  margin: auto;
+  color: red;
+  font-weight: 900;
+  font-size: 18px;
+}
+
+body #settlement #settlement_check #next {
+  width: 100%;
+  height: 40%;
+  position: relative;
+}
+
+body #settlement #settlement_check #next #next_btn {
+  width: 20%;
+  height: 70%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border-top: 2px solid red;
+  border-left: 2px solid red;
+}
+
+body #settlement #settlement_check #next #next_btn p {
+  margin-top: 8px;
+  margin-left: 8px;
+  color: red;
+  font-weight: 900;
+  font-size: 18px;
+}
+
+@media (max-width: 1215px) {
+  .process {
+    width: 100px !important;
+    height: 100px !important;
+    font-size: 12px !important;
+  }
+  .process img {
+    width: 50% !important;
+  }
+  .process_arrow {
+    width: 25px !important;
+    height: 25px !important;
+  }
+}
+
+@media (max-width: 775px) {
+  .process {
+    width: 50px !important;
+    height: 50px !important;
+    font-size: 12px !important;
+  }
+  .process p {
+    text-align: center;
+  }
+  .process img {
+    width: 30% !important;
+  }
+  .process_arrow {
+    width: 15px !important;
+    height: 15px !important;
+  }
+  #title {
+    margin-top: 40px !important;
+  }
+}
+
+@media (max-width: 375px) {
+  #process_group {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .process {
+    width: 90px !important;
+    height: 90px !important;
+    font-size: 12px !important;
+  }
+  .process p {
+    text-align: center;
+  }
+  .process img {
+    width: 48% !important;
+  }
+  .process_arrow {
+    width: 15px !important;
+    height: 15px !important;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+}
+
+@media (max-width: 320px) {
+  #title p {
+    font-size: 12px !important;
+    padding-right: 16px !important;
+  }
+  .name_info {
+    width: 29% !important;
+  }
+  .price_info {
+    width: 16% !important;
+  }
+  .price_info p {
+    font-size: 12px !important;
+  }
+  .number_info {
+    width: 15%;
+  }
+  .total_price_info p {
+    font-size: 13px !important;
+  }
+  .del_info {
+    width: 15% !important;
+  }
+}
+/*# sourceMappingURL=add_shop_car.css.map */

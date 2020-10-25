@@ -1,0 +1,238 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+body #title {
+  width: 80%;
+  height: 25px;
+  background-color: #f60c0d;
+  margin: auto;
+  padding-left: 50px;
+}
+
+body #title p {
+  color: white;
+  font-weight: 900;
+  line-height: 25px;
+}
+
+body #title_name_group {
+  width: 80%;
+  background-color: #f9f9f9;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body #title_name_group .title_name {
+  width: 10%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body #title_name_group .title_name p {
+  font-size: 18px;
+  font-weight: 900;
+  color: #8b8182;
+}
+
+body #title_name_group .title_name:nth-child(2) {
+  width: 60%;
+}
+
+body .content_group {
+  width: 80%;
+  height: 300px;
+  background-color: #f9f9f9;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+}
+
+body .content_group .content {
+  width: 10%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .content_group .content p {
+  font-size: 18px;
+  font-weight: 900;
+  color: #e70c12;
+}
+
+body .content_group .content:nth-child(2) {
+  width: 60%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body #info {
+  width: 80%;
+  margin: auto;
+  border-top: 20px solid #f60c0d;
+  border-left: 2px solid #e70c12;
+  border-right: 2px solid #e70c12;
+  border-bottom: 2px solid #e70c12;
+  color: #ad8995;
+  font-weight: 900;
+}
+
+body #info #paysong {
+  width: 100%;
+  height: 40%;
+  padding-left: 50px;
+  padding-top: 25px;
+}
+
+body #info #paysong h2 {
+  margin: 0;
+}
+
+body #info #paysong #patsong_text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 100px;
+}
+
+body #info #paysong #patsong_text #little_box {
+  width: 15px;
+  height: 15px;
+  background-color: #ad8995;
+  margin: 20px 20px;
+}
+
+body #info #button {
+  width: 100%;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  font-size: 24px;
+}
+
+body #info #button .btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 2px solid #f60c0d;
+  color: #f60c0d;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+body #info #button .btn2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 2px solid #f60c0d;
+  color: #f60c0d;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+body #info #button .btn {
+  width: 150px;
+  height: 60px;
+  position: absolute;
+  bottom: 0;
+  right: 180px;
+}
+
+body #info #button .btn2 {
+  width: 150px;
+  height: 60px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+@media (max-width: 1015px) {
+  #title {
+    width: 100% !important;
+  }
+  #title_name_group {
+    width: 100% !important;
+  }
+  .content_group {
+    width: 100% !important;
+  }
+  #info {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 504px) {
+  .content p {
+    font-size: 12px !important;
+  }
+}
+
+@media (max-width: 430px) {
+  #paysong {
+    padding-left: 0 !important;
+  }
+  #paysong #patsong_text {
+    padding-left: 50px !important;
+    font-size: 14px !important;
+  }
+  .content_group .content {
+    width: 20% !important;
+  }
+  .content_group .content:nth-child(2) {
+    width: 40% !important;
+  }
+}
+
+@media (max-width: 320px) {
+  #button a .btn {
+    width: 110px !important;
+  }
+  #button a .btn2 {
+    width: 110px !important;
+  }
+}
+/*# sourceMappingURL=order_check.css.map */

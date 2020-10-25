@@ -1,0 +1,848 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+body #peripherals_loading {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+body #peripherals_loading::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  background-image: url("../img/peripherals_screen/peripherals_loading.jpg");
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-animation-name: peripherals_loading;
+          animation-name: peripherals_loading;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes peripherals_loading {
+  0% {
+    -webkit-filter: brightness(110%);
+            filter: brightness(110%);
+  }
+  100% {
+    -webkit-filter: brightness(80%);
+            filter: brightness(80%);
+  }
+}
+
+@keyframes peripherals_loading {
+  0% {
+    -webkit-filter: brightness(110%);
+            filter: brightness(110%);
+  }
+  100% {
+    -webkit-filter: brightness(80%);
+            filter: brightness(80%);
+  }
+}
+
+body #peripherals_loading img {
+  position: absolute;
+  left: 50%;
+  bottom: -35%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-animation: switchcontroller 5s forwards,switchcontroller2 6s infinite 4s;
+          animation: switchcontroller 5s forwards,switchcontroller2 6s infinite 4s;
+}
+
+@-webkit-keyframes switchcontroller {
+  0% {
+    bottom: -35%;
+    -webkit-filter: brightness(50%);
+            filter: brightness(50%);
+  }
+  80% {
+    bottom: 55%;
+    -webkit-filter: brightness(130%);
+            filter: brightness(130%);
+  }
+  100% {
+    bottom: 50%;
+    -webkit-filter: brightness(150%);
+            filter: brightness(150%);
+  }
+}
+
+@keyframes switchcontroller {
+  0% {
+    bottom: -35%;
+    -webkit-filter: brightness(50%);
+            filter: brightness(50%);
+  }
+  80% {
+    bottom: 55%;
+    -webkit-filter: brightness(130%);
+            filter: brightness(130%);
+  }
+  100% {
+    bottom: 50%;
+    -webkit-filter: brightness(150%);
+            filter: brightness(150%);
+  }
+}
+
+@-webkit-keyframes switchcontroller2 {
+  0% {
+    bottom: 55%;
+  }
+  50% {
+    bottom: 50%;
+  }
+  100% {
+    bottom: 55%;
+  }
+}
+
+@keyframes switchcontroller2 {
+  0% {
+    bottom: 55%;
+  }
+  50% {
+    bottom: 50%;
+  }
+  100% {
+    bottom: 55%;
+  }
+}
+
+body #SwitchProController {
+  width: 100%;
+  height: 100vh;
+  margin-top: 100px;
+}
+
+body #SwitchProController #SwitchProControlleTitle {
+  width: 60%;
+  height: 15%;
+  background-color: rgba(253, 0, 0, 0.836);
+  font-size: 36px;
+  color: white;
+  text-align: right;
+  padding-top: 25px;
+  font-weight: 900;
+}
+
+body #SwitchProController #SwitchProControlleTitle p {
+  margin: 0;
+}
+
+body #SwitchProController #SwitchProControlleContent {
+  width: 100%;
+  height: 35%;
+  margin-top: 100px;
+}
+
+body #SwitchProController #SwitchProControlleContent .SwitchProControlleContent_div {
+  width: 100%;
+  height: 33.33%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body #SwitchProController #SwitchProControlleContent .SwitchProControlleContent_div p {
+  margin: 0;
+  line-height: 50px;
+  margin-left: 10px;
+  font-size: 17px;
+  font-weight: 900;
+}
+
+body #SwitchProController #SwitchProControlleContent .SwitchProControlleContent_div img {
+  margin-left: 10px;
+}
+
+body #SwitchProController #SwitchProControllePic {
+  width: 100%;
+  height: 36.4%;
+  background-image: url("../img/peripherals_screen/img02.jpg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+body #SwitchProController #SwitchProControllePic2 {
+  width: 100%;
+  height: 36.4%;
+  background-image: url("../img/peripherals_screen/img01.jpg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+body #peripherals_JoyCon {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../img/peripherals_screen/Joy-Con.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+body #peripherals_JoyCon img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+body #peripherals_JoyCon #joyconleft {
+  left: 40%;
+  -webkit-animation-name: joyconleft;
+          animation-name: joyconleft;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-fill-mode: none;
+          animation-fill-mode: none;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes joyconleft {
+  0% {
+    -webkit-transform: translate(0%, 0%);
+            transform: translate(0%, 0%);
+  }
+  50% {
+    -webkit-transform: translate(0%, 20%);
+            transform: translate(0%, 20%);
+  }
+  100% {
+    -webkit-transform: translate(0%, 0%);
+            transform: translate(0%, 0%);
+  }
+}
+
+@keyframes joyconleft {
+  0% {
+    -webkit-transform: translate(0%, 0%);
+            transform: translate(0%, 0%);
+  }
+  50% {
+    -webkit-transform: translate(0%, 20%);
+            transform: translate(0%, 20%);
+  }
+  100% {
+    -webkit-transform: translate(0%, 0%);
+            transform: translate(0%, 0%);
+  }
+}
+
+body #peripherals_JoyCon #joyconright {
+  left: 53%;
+  -webkit-animation-name: joyconright;
+          animation-name: joyconright;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-fill-mode: none;
+          animation-fill-mode: none;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes joyconright {
+  0% {
+    -webkit-transform: translate(0%, 0%);
+            transform: translate(0%, 0%);
+  }
+  50% {
+    -webkit-transform: translate(0%, -20%);
+            transform: translate(0%, -20%);
+  }
+  100% {
+    -webkit-transform: translate(0%, 0%);
+            transform: translate(0%, 0%);
+  }
+}
+
+@keyframes joyconright {
+  0% {
+    -webkit-transform: translate(0%, 0%);
+            transform: translate(0%, 0%);
+  }
+  50% {
+    -webkit-transform: translate(0%, -20%);
+            transform: translate(0%, -20%);
+  }
+  100% {
+    -webkit-transform: translate(0%, 0%);
+            transform: translate(0%, 0%);
+  }
+}
+
+body #peripherals_circle {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../img/peripherals_screen/mario-kart-81.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+body #peripherals_circle img {
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  -webkit-animation-name: circle;
+          animation-name: circle;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes circle {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes circle {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+body #circle_content {
+  width: 100%;
+  height: 100vh;
+  margin-top: 100px;
+}
+
+body #circle_content #circle_title {
+  width: 60%;
+  height: 15%;
+  background-color: red;
+  font-size: 36px;
+  color: white;
+  text-align: right;
+  font-weight: 900;
+  padding-top: 1px;
+}
+
+body #circle_content #circle_info {
+  width: 100%;
+  height: 85%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body #circle_content #circle_info #circle_info_pic {
+  width: 40%;
+  height: 100%;
+  position: relative;
+}
+
+body #circle_content #circle_info #circle_info_pic img {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+body #circle_content #circle_info #circle_info_text {
+  width: 60%;
+  height: 100%;
+}
+
+body #circle_content #circle_info #circle_info_text .circle_info_text_content {
+  width: 100%;
+  height: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 50px;
+  padding-top: 25px;
+}
+
+body #circle_content #circle_info #circle_info_text .circle_info_text_content p {
+  margin: 0;
+  padding-top: 10px;
+  padding-left: 10px;
+  font-weight: 900;
+}
+
+body #circle_content #circle_info #circle_info_text .circle_info_text_content:nth-child(1) {
+  padding-top: 100px;
+}
+
+body #circle_content #circle_info #circle_info_text .circle_info_text_content:nth-child(2) {
+  padding-top: 0;
+}
+
+body #circle_content #circle_info #circle_info_text .circle_info_text_content:nth-child(4) {
+  color: gray;
+}
+
+body #other {
+  width: 100%;
+  height: 20vh;
+  background-color: white;
+  border-top: 1px solid red;
+  border-bottom: 1px solid red;
+  font-size: 48px;
+  position: relative;
+}
+
+body #other p {
+  position: absolute;
+  top: 0%;
+  left: 45%;
+  color: red;
+}
+
+body #switchbag_content {
+  width: 100%;
+  height: 100vh;
+  margin-top: 100px;
+}
+
+body #switchbag_content #switchbag_title {
+  width: 60%;
+  height: 15%;
+  background-color: red;
+  font-size: 32px;
+  color: white;
+  text-align: left;
+  font-weight: 900;
+  float: right;
+}
+
+body #switchbag_content #switchbag_info {
+  width: 100%;
+  height: 85%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body #switchbag_content #switchbag_info #switchbag_info_pic {
+  width: 40%;
+  height: 100%;
+  position: relative;
+}
+
+body #switchbag_content #switchbag_info #switchbag_info_pic img {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+body #switchbag_content #switchbag_info #switchbag_info_text {
+  width: 60%;
+  height: 100%;
+}
+
+body #switchbag_content #switchbag_info #switchbag_info_text .switchbag_info_text_content {
+  width: 100%;
+  height: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 30%;
+  padding-top: 25px;
+}
+
+body #switchbag_content #switchbag_info #switchbag_info_text .switchbag_info_text_content p {
+  margin: 0;
+  padding-top: 10px;
+  padding-left: 10px;
+  font-weight: 900;
+}
+
+body #switchbag_content #switchbag_info #switchbag_info_text .switchbag_info_text_content:nth-child(1) {
+  padding-top: 100px;
+}
+
+body #switchbag_content #switchbag_info #switchbag_info_text .switchbag_info_text_content:nth-child(2) {
+  padding-top: 0;
+}
+
+body #switchbag_content #switchbag_info #switchbag_info_text .switchbag_info_text_content:nth-child(4) {
+  color: gray;
+}
+
+body #switchlitebag_content {
+  width: 100%;
+  height: 100vh;
+  margin-top: 100px;
+}
+
+body #switchlitebag_content #switchlitebag_title {
+  width: 60%;
+  height: 15%;
+  background-color: red;
+  font-size: 32px;
+  color: white;
+  text-align: right;
+  font-weight: 900;
+  padding-top: 1px;
+}
+
+body #switchlitebag_content #switchlitebag_info {
+  width: 100%;
+  height: 85%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body #switchlitebag_content #switchlitebag_info #switchlitebag_info_pic {
+  width: 40%;
+  height: 100%;
+  position: relative;
+}
+
+body #switchlitebag_content #switchlitebag_info #switchlitebag_info_pic img {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+body #switchlitebag_content #switchlitebag_info #switchlitebag_info_text {
+  width: 60%;
+  height: 100%;
+}
+
+body #switchlitebag_content #switchlitebag_info #switchlitebag_info_text .switchlitebag_info_text_content {
+  width: 100%;
+  height: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 50px;
+  padding-top: 25px;
+}
+
+body #switchlitebag_content #switchlitebag_info #switchlitebag_info_text .switchlitebag_info_text_content p {
+  margin: 0;
+  padding-top: 10px;
+  padding-left: 10px;
+  font-weight: 900;
+}
+
+body #switchlitebag_content #switchlitebag_info #switchlitebag_info_text .switchlitebag_info_text_content:nth-child(1) {
+  padding-top: 100px;
+}
+
+body #switchlitebag_content #switchlitebag_info #switchlitebag_info_text .switchlitebag_info_text_content:nth-child(2) {
+  padding-top: 0;
+}
+
+body #switchlitebag_content #switchlitebag_info #switchlitebag_info_text .switchlitebag_info_text_content:nth-child(4) {
+  color: gray;
+}
+
+body #ProtectiveShell_content {
+  width: 100%;
+  height: 100vh;
+  margin-top: 100px;
+}
+
+body #ProtectiveShell_content #ProtectiveShell_title {
+  width: 60%;
+  height: 15%;
+  background-color: red;
+  font-size: 32px;
+  color: white;
+  text-align: left;
+  font-weight: 900;
+  float: right;
+}
+
+body #ProtectiveShell_content #ProtectiveShell_info {
+  width: 100%;
+  height: 85%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body #ProtectiveShell_content #ProtectiveShell_info #ProtectiveShell_info_pic {
+  width: 40%;
+  height: 100%;
+  position: relative;
+}
+
+body #ProtectiveShell_content #ProtectiveShell_info #ProtectiveShell_info_pic img {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+body #ProtectiveShell_content #ProtectiveShell_info #ProtectiveShell_info_text {
+  width: 60%;
+  height: 100%;
+}
+
+body #ProtectiveShell_content #ProtectiveShell_info #ProtectiveShell_info_text .ProtectiveShell_info_text_content {
+  width: 100%;
+  height: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 30%;
+  padding-top: 25px;
+}
+
+body #ProtectiveShell_content #ProtectiveShell_info #ProtectiveShell_info_text .ProtectiveShell_info_text_content p {
+  margin: 0;
+  padding-top: 10px;
+  padding-left: 10px;
+  font-weight: 900;
+}
+
+body #ProtectiveShell_content #ProtectiveShell_info #ProtectiveShell_info_text .ProtectiveShell_info_text_content:nth-child(1) {
+  padding-top: 100px;
+}
+
+body #ProtectiveShell_content #ProtectiveShell_info #ProtectiveShell_info_text .ProtectiveShell_info_text_content:nth-child(2) {
+  padding-top: 0;
+}
+
+body #ProtectiveShell_content #ProtectiveShell_info #ProtectiveShell_info_text .ProtectiveShell_info_text_content:nth-child(4) {
+  color: gray;
+}
+
+body #bracket_content {
+  width: 100%;
+  height: 100vh;
+  margin-top: 100px;
+}
+
+body #bracket_content #bracket_title {
+  width: 60%;
+  height: 15%;
+  background-color: red;
+  font-size: 32px;
+  color: white;
+  text-align: right;
+  font-weight: 900;
+  padding-top: 1px;
+}
+
+body #bracket_content #bracket_info {
+  width: 100%;
+  height: 85%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body #bracket_content #bracket_info #bracket_info_pic {
+  width: 40%;
+  height: 100%;
+  position: relative;
+}
+
+body #bracket_content #bracket_info #bracket_info_pic img {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+body #bracket_content #bracket_info #bracket_info_text {
+  width: 60%;
+  height: 100%;
+}
+
+body #bracket_content #bracket_info #bracket_info_text .bracket_info_text_content {
+  width: 100%;
+  height: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 50px;
+  padding-top: 25px;
+}
+
+body #bracket_content #bracket_info #bracket_info_text .bracket_info_text_content p {
+  margin: 0;
+  padding-top: 10px;
+  padding-left: 10px;
+  font-weight: 900;
+}
+
+body #bracket_content #bracket_info #bracket_info_text .bracket_info_text_content:nth-child(1) {
+  padding-top: 100px;
+}
+
+body #bracket_content #bracket_info #bracket_info_text .bracket_info_text_content:nth-child(2) {
+  padding-top: 0;
+}
+
+body #bracket_content #bracket_info #bracket_info_text .bracket_info_text_content:nth-child(4) {
+  color: gray;
+}
+
+@media (max-width: 867px) {
+  #SwitchProControlleTitle {
+    font-size: 24px !important;
+    padding-top: 35px !important;
+  }
+}
+
+@media (max-width: 414px) {
+  #peripherals_circle img {
+    top: 45%  !important;
+    left: 41% !important;
+  }
+  #circle_title {
+    font-size: 25px !important;
+  }
+  #circle_info_text .circle_info_text_content:nth-child(1) {
+    padding-top: 0 !important;
+    height: 10% !important;
+  }
+  #circle_info_text .circle_info_text_content:nth-child(2) {
+    height: 10% !important;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  #circle_info_text .circle_info_text_content:nth-child(3) {
+    height: 40% !important;
+  }
+  #circle_info_text .circle_info_text_content:nth-child(4) {
+    height: 40% !important;
+  }
+  #switchbag_title {
+    font-size: 24px !important;
+  }
+  #switchbag_info_text .switchbag_info_text_content:nth-child(1) {
+    padding-top: 0 !important;
+    height: 10% !important;
+  }
+  #switchbag_info_text .switchbag_info_text_content:nth-child(2) {
+    height: 10% !important;
+  }
+  #switchbag_info_text .switchbag_info_text_content:nth-child(3) {
+    height: 40% !important;
+    padding-top: 0 !important;
+  }
+  #switchbag_info_text .switchbag_info_text_content:nth-child(4) {
+    height: 40% !important;
+  }
+  #switchlitebag_content #switchlitebag_title {
+    font-size: 20px !important;
+  }
+  #switchlitebag_content #switchlitebag_info_text .switchlitebag_info_text_content:nth-child(1) {
+    padding-top: 0 !important;
+    height: 10% !important;
+  }
+  #switchlitebag_content #switchlitebag_info_text .switchlitebag_info_text_content:nth-child(2) {
+    height: 10% !important;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  #switchlitebag_content #switchlitebag_info_text .switchlitebag_info_text_content:nth-child(3) {
+    height: 40% !important;
+  }
+  #switchlitebag_content #switchlitebag_info_text .switchlitebag_info_text_content:nth-child(4) {
+    height: 40% !important;
+  }
+  #ProtectiveShell_title {
+    font-size: 20px !important;
+  }
+  #ProtectiveShell_info_text .ProtectiveShell_info_text_content:nth-child(1) {
+    padding-top: 0 !important;
+    height: 10% !important;
+  }
+  #ProtectiveShell_info_text .ProtectiveShell_info_text_content:nth-child(2) {
+    height: 10% !important;
+  }
+  #ProtectiveShell_info_text .ProtectiveShell_info_text_content:nth-child(3) {
+    height: 40% !important;
+  }
+  #ProtectiveShell_info_text .ProtectiveShell_info_text_content:nth-child(4) {
+    height: 40% !important;
+  }
+  #bracket_title {
+    font-size: 20px !important;
+  }
+  #bracket_info_text .bracket_info_text_content:nth-child(1) {
+    padding-top: 0 !important;
+    height: 10% !important;
+  }
+  #bracket_info_text .bracket_info_text_content:nth-child(2) {
+    height: 10% !important;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  #bracket_info_text .bracket_info_text_content:nth-child(3) {
+    height: 40% !important;
+  }
+  #bracket_info_text .bracket_info_text_content:nth-child(4) {
+    height: 40% !important;
+    padding-top: 40px !important;
+  }
+  #SwitchProControlleTitle {
+    font-size: 22px !important;
+  }
+  #SwitchProControlleContent {
+    margin-top: 30px !important;
+  }
+  #SwitchProControlleContent .SwitchProControlleContent_div p {
+    font-size: 15px !important;
+  }
+}
+/*# sourceMappingURL=peripherals_screen.css.map */
