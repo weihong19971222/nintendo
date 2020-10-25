@@ -1,4 +1,4 @@
-@extends('layouts/nav_footer')
+@extends('layouts/nav_footer_shop')
 
 @section('title_name')
 產品內頁
@@ -6,10 +6,14 @@
 
 @section('css')
 <link rel="stylesheet" href="./css/store_content.css">
+<link rel="stylesheet" href="./css/store_main.css">
+<link rel="stylesheet" href="./css/store_page.css">
+
 
 @endsection
 
 @section('cont')
+
 <div id="title_type">
     <div id="title_type_text">
         <p>{{$products->products_type}}</p>
