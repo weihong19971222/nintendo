@@ -23,7 +23,8 @@ class FrontController extends Controller
         return view('/front/switch_lite_screen');
     }
     public function index(){
-        return view('/front/index');
+        $news=News::all();
+        return view('/front/index',compact('news'));
     }
     public function support(){
         return view('/front/support');

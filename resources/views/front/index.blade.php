@@ -15,22 +15,22 @@
             <div id="news_tag">NEWS</div>
             <div id="news_date">
                 <marquee direction="down" scrollamount="2"  class="color">
-                    <a href="111">2020.10.11</a>
-			        <a href="#">2020.10.10</a>
-			        <a href="#">2020.10.09</a>
+                    @foreach ($news as $new)
+                        <a href="/news_info_{{$new->id}}">{{$new->news_date}}</a>
+                    @endforeach
                 </marquee>
             </div>
             <div id="news_text">
                 <marquee direction="down" scrollamount="2"  class="color">
-                    <a href="111">新聞新聞新聞新聞新聞新聞新聞1dddddddddddddd1</a>
-			        <a href="#">新聞新聞新聞新聞新聞新聞新聞10</a>
-			        <a href="#">新聞新聞新聞新聞新聞新聞新聞9</a>
+                    @foreach ($news as $new)
+                        <a href="/news_info_{{$new->id}}">{{$new->news_title}}</a>
+                     @endforeach
                 </marquee>
             </div>
             <div id="btn_click">
-                    <a href="111">新聞新聞新聞新聞新聞新聞新聞1dddddddddddddd1</a>
-			        <a href="#">新聞新聞新聞新聞新聞新聞新聞10</a>
-			        <a href="#">新聞新聞新聞新聞新聞新聞新聞9</a>
+                @foreach ($news as $new)
+                <a href="/news_info_{{$new->id}}">{{$new->news_title}}</a>
+             @endforeach
             </div>
             <div id="news_btn">
                 <img src="./img/index/up.png" alt="">

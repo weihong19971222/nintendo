@@ -152,6 +152,7 @@ body #s1 #news_bar #btn_click a {
   color: white;
   text-decoration: none;
   display: block;
+  border-bottom: 1px solid white;
   width: 100%;
 }
 
